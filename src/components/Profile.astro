@@ -1,0 +1,64 @@
+---
+import { Image } from "astro:assets";
+import photo from "../../public/img/photo.webp";
+import data from "../data/data.ts";
+import SocialNetwork from "./SocialNetwork.astro";
+import Email from "./Email";
+---
+
+<section class="flex flex-col items-center justify-center">
+  <figure class="w-44 h-auto">
+    <Image
+      src={photo}
+      alt="Moises"
+      width={400}
+      height={400}
+      class="rounded-full"
+      loading={"eager"}
+      format="webp"
+    />
+  </figure>
+  <div
+    class="flex flex-col justify-center items-center text-center space-y-7 mt-5"
+  >
+    <h1 class="text-3xl sm:text-5xl">
+      <span class="text-blue-500 font-bold text-2xl sm:text-5xl">
+        {"< "}
+      </span>
+       I'm Moises Obando
+      <span class="text-blue-500 font-bold text-2xl sm:text-5xl">
+        {" />"}
+      </span>
+    </h1>
+    <p class="text-base sm:text-lg">
+      Skilled <strong>Front End Developer</strong> with 2 years of professional
+      experience and a deep passion for the{" "}
+      <strong>iGaming industry</strong>. I love creating immersive and amazing
+      websites through carefully crafted code and user-centric design.
+    </p>
+    <figure class="flex justify-center items-center gap-3">
+      {
+        data.skills.map((info) => (
+          <img
+            src={info.logo}
+            alt={info.nombre}
+            width={30}
+            height={30}
+            class="w-10 h-auto"
+            loading={"eager"}
+          />
+        ))
+      }
+    </figure>
+    <a
+      href="/cv/Moises-Obando-Front-end.pdf"
+      download
+      class="border-b-2 border-t-2 border-blue-600 rounded-md py-3 px-5 hover:bg-[#061A40]"
+    >
+      DOWNLOAD CV
+    </a>
+    <SocialNetwork />
+    <!-- Astro esperará hasta que el navegador esté inactivo para cargar el JavaScript1. Esto se usa cuando la interactividad del componente no es una alta prioridad -->
+    <Email client:idle />
+  </div>
+</section>

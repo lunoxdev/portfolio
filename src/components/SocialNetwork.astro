@@ -1,0 +1,20 @@
+---
+import data from "../data/data";
+---
+
+<figure class="flex flex-row items-center justify-center gap-5">
+  {
+    data.social.map((info) => (
+      <a href={info.url} target="_blank" rel="noreferrer nofollow">
+        <img
+          src={info.logo}
+          alt={info.nombre}
+          height={35}
+          width={35}
+          loading="eager"
+          class="hover:scale-125 w-10 h-auto"
+        />
+      </a>
+    ))
+  }
+</figure>

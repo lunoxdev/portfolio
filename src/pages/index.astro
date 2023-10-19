@@ -1,9 +1,18 @@
 ---
-import Layout from "../layouts/layout.astro"
+import Layout from "../layouts/layout.astro";
+import Profile from "../components/Profile.astro";
+import Experience from "../components/Experience.astro";
 ---
 
 <Layout>
-    <main>
-    <h1 class="text-5xl">Hi Lunox!</h1>
-    </main>
+  <main
+    class="min-h-screen flex flex-col p-10 md:p-32 px-10 md:px-60 space-y-44 sm:space-y-80"
+  >
+    <Profile />
+    <div class="space-y-44 sm:space-y-80">
+      <Experience />
+      <!-- <Projects />
+          <Contact /> -->
+    </div>
+  </main>
 </Layout>

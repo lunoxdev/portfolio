@@ -1,0 +1,15 @@
+---
+const { years, regularText, boldText } = Astro.props;
+---
+
+<div class="rounded-lg py-14 px-5 border space-y-5">
+  <p>
+    <span class="font-semibold text-6xl">{years}</span>
+  </p>
+  <p>
+    <span class="text-lg sm:text-xl">
+      {regularText}
+      <strong>{boldText}</strong>
+    </span>
+  </p>
+</div>

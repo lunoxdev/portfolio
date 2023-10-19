@@ -1,30 +1,34 @@
 ---
 import "../styles/global.css";
 
-export const metadata = {
-	title: "Moises Obando | iGaming Front End Developer - Web Portfolio",
-	description: "Explore my web portfolio, a Front End Developer specialized in iGaming. Discover highlighted projects, skills, and more.",
-	keywords: "Front End Developer, Web Developer, React JS, iGaming, Moises Obando, Web Portfolio, Latam Markets, Betcris",
+const metadata = {
+  title: "Moises Obando | iGaming Front End Developer - Web Portfolio",
+  description:
+    "Explore my web portfolio, a Front End Developer specialized in iGaming. Discover highlighted projects, skills, and more.",
+  keywords:
+    "Front End Developer, Web Developer, React JS, iGaming, Moises Obando, Web Portfolio, Latam Markets, Betcris",
 };
 ---
 
 <html lang="en">
-	<head>
-		<meta charset="utf-8" />
-		<link rel="icon" type="image" href="/public/favicon.ico" />
-		<meta name="viewport" content="width=device-width" />
-		<meta name="generator" content={Astro.generator} />
-		<title>{metadata.title}</title>
-        <meta name="description" content={metadata.description} />
-        <meta name="keywords" content={metadata.keywords} />
-        <link rel="canonical" href="https://moisesobando.com/" />
-        <meta property="og:title" content={metadata.title} />
-        <meta property="og:description" content={metadata.description} />
-        {/* <meta property="og:image" content="https://moisesobando.com/assets/photo-40bcd43d.jpeg" /> */}
-        <meta property="og:url" content="https://moisesobando.com" />
-        <meta property="og:type" content="website" />
-	</head>
-	<body>
-		<slot />
-	</body>
+  <head>
+    <meta charset="utf-8" />
+    <link rel="icon" type="image" href="/favicon.ico" />
+    <meta name="viewport" content="width=device-width" />
+    <meta name="generator" content={Astro.generator} />
+    <title>{metadata.title}</title>
+    <meta name="description" content={metadata.description} />
+    <meta name="keywords" content={metadata.keywords} />
+    <link rel="canonical" href="https://moisesobando.com/" />
+    <meta property="og:title" content={metadata.title} />
+    <meta property="og:description" content={metadata.description} />
+    {
+      /* <meta property="og:image" content="https://moisesobando.com/assets/photo-40bcd43d.jpeg" /> */
+    }
+    <meta property="og:url" content="https://moisesobando.com" />
+    <meta property="og:type" content="website" />
+  </head>
+  <body>
+    <slot />
+  </body>
 </html>
