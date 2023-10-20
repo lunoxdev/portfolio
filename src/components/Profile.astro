@@ -1,5 +1,4 @@
 ---
-import { Image } from "astro:assets";
 import photo from "../../public/img/photo.webp";
 import data from "../data/data.ts";
 import SocialNetwork from "./SocialNetwork.astro";
@@ -8,14 +7,13 @@ import Email from "./Email";
 
 <section class="flex flex-col items-center justify-center">
   <figure class="w-44 h-auto">
-    <Image
-      src={photo}
+    <img
+      src={photo.src}
       alt="Moises"
       width="400"
       height="400"
       class="rounded-full"
       loading={"eager"}
-      format="webp"
     />
   </figure>
   <div
