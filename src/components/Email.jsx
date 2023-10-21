@@ -1,4 +1,4 @@
-import { useState, useEffect, useCallback } from "react";
+import { useState, useCallback } from "react";
 import copyicon from "../../public/copy-icon.svg";
 
 const email = "lunox.code@gmail.com";
@@ -7,21 +7,15 @@ const Email = () => {
   const [copied, setCopied] = useState(false);
 
   const handleCopyClick = useCallback(() => {
+    const textToCopy = "lunox.code@gmail.com";
     navigator.clipboard.writeText(textToCopy);
     setCopied(true);
-  }, []);
 
-  useEffect(() => {
-    let timer;
-    if (copied) {
-      timer = setTimeout(() => {
-        setCopied(false);
-      }, 1000);
-    }
-    return () => {
-      clearTimeout(timer);
-    };
-  }, [copied]);
+    // Eestablecer copied en false luego de 1 seg
+    setTimeout(() => {
+      setCopied(false);
+    }, 1000);
+  }, []);
 
   return (
     <div className="relative flex flex-col items-center justify-center mt-5">
