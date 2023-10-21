@@ -1,18 +1,18 @@
 ---
 import photo from "../../public/img/photo.webp";
-import data from "../data/data.ts";
+import data from "../data/data.tsx";
 import SocialNetwork from "./SocialNetwork.astro";
 import Email from "./Email";
 ---
 
 <section class="flex flex-col items-center justify-center">
-  <figure class="w-44 h-auto">
+  <figure>
     <img
       src={photo.src}
       alt="Moises"
       width="400"
       height="400"
-      class="rounded-full"
+      class="rounded-full w-44 h-auto"
       loading={"eager"}
     />
   </figure>
