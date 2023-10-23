@@ -24,6 +24,7 @@
 │       └── Profile.astro
 │       └── Projects.astro
 │       └── SocialNetwork.astro
+        └── GTMTag.astro
 │       assets/
 │       └── cv
 │           └── Moises-Obando-Front0end.pdf
