@@ -1,4 +1,5 @@
 ---
+import GTMTag from "../components/GTMTag.astro";
 import "../styles/global.css";
 
 const metadata = {
@@ -12,6 +13,8 @@ const metadata = {
 
 <html lang="en">
   <head>
+    <GTMTag />
+
     <meta charset="utf-8" />
     <link rel="icon" type="image" href="/favicon.ico" />
     <meta name="viewport" content="width=device-width" />
@@ -21,13 +24,23 @@ const metadata = {
     <link rel="canonical" href="https://moisesobando.com/" />
     <meta property="og:title" content={metadata.title} />
     <meta property="og:description" content={metadata.description} />
-    {
-      /* <meta property="og:image" content="https://moisesobando.com/assets/photo-40bcd43d.jpeg" /> */
-    }
+    <meta
+      property="og:image"
+      content="https://moisesobando.com/public/img/photo.webp"
+    />
     <meta property="og:url" content="https://moisesobando.com" />
     <meta property="og:type" content="website" />
   </head>
   <body>
+    <!-- Google Tag Manager (noscript) -->
+    <noscript
+      ><iframe
+        src="https://www.googletagmanager.com/ns.html?id=GTM-WDNMZMQM"
+        height="0"
+        width="0"
+        style="display:none;visibility:hidden"></iframe></noscript
+    >
+    <!-- End Google Tag Manager (noscript) -->
     <slot />
   </body>
 </html>
