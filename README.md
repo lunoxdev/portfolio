@@ -7,7 +7,6 @@
 /
 ├── public/
 │   └── img/
-│   └── copy-icon.svg
 │   └── favicon.ico
 ├── src/
 │   └── pages/
@@ -24,8 +23,9 @@
 │       └── Profile.astro
 │       └── Projects.astro
 │       └── SocialNetwork.astro
-        └── GTMTag.astro
+│       └── GTMTag.astro
 │       assets/
+│       └── copy-icon.svg
 │       └── cv
 │           └── Moises-Obando-Front0end.pdf
 │

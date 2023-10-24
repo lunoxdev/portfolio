@@ -1,5 +1,5 @@
 import { useState, useCallback } from "react";
-import copyicon from "../../public/copy-icon.svg";
+import copyicon from "../assets/copy-icon.svg";
 
 const email = "lunox.code@gmail.com";
 
