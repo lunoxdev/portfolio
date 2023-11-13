@@ -7,9 +7,9 @@ const { years, regularText, boldText } = Astro.props;
     <span class="font-semibold text-6xl">{years}</span>
   </p>
   <p>
-    <span class="text-lg sm:text-xl">
+    <span class="text-lg text-[#888888] sm:text-xl">
       {regularText}
-      <strong>{boldText}</strong>
+      {boldText}
     </span>
   </p>
 </div>

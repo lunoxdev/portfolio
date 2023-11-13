@@ -1,6 +1,7 @@
 export interface Project {
   id: number;
   name: string;
+  btnname: String;
   img: string;
   url: string;
   description: string;
@@ -24,12 +25,14 @@ const projects: Project[] = [
     id: 1,
     name: "Casino",
     img: "../img/portfolio/casino.webp",
+    btnname: "Casino",
     url: "https://casino-games-app.netlify.app/",
     description: "A sophisticated casino platform for betting.",
   },
   {
     id: 2,
     name: "Afiliados",
+    btnname: "Afiliados",
     img: "../img/portfolio/afiliados.webp",
     url: "https://afiliados.netlify.app/",
     description:
@@ -37,7 +40,17 @@ const projects: Project[] = [
   },
   {
     id: 3,
+    name: "Lowercase to uppercase online converter",
+    btnname: "Lowercase to uppercase",
+    img: "../img/portfolio/minusculasymayusculas.webp",
+    url: "https://rick-morty-adventures.netlify.app/",
+    description:
+      "This project consists of a simple and effective web application that allows users to convert text between uppercase and lowercase letters quickly and conveniently in just a few seconds.",
+  },
+  {
+    id: 4,
     name: "Rick & Morty",
+    btnname: "Rick & Morty",
     img: "../img/portfolio/rickandmorty.webp",
     url: "https://rick-morty-adventures.netlify.app/",
     description:
