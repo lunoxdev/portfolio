@@ -1,6 +1,7 @@
 ---
-import GTMTag from "../components/GTMTag.astro";
 import "../styles/global.css";
+import GTMTag from "../components/GTMTag.astro";
+import Footer from "../components/Footer.astro";
 
 const metadata = {
   title: "Moises Obando | iGaming Front End Developer - Web Portfolio",
@@ -30,10 +31,15 @@ const metadata = {
     <meta property="og:type" content="website" />
   </head>
   <body>
-    <div class="min-h-screen relative flex justify-center p-4 -mt-12">
-      <main class="max-w-screen-lg">
-        <slot />
-      </main>
+    <div class="min-h-screen relative flex justify-center p-4">
+      <div class="max-w-screen-lg -mt-14">
+        <main>
+          <slot />
+        </main>
+        <footer>
+          <Footer />
+        </footer>
+      </div>
     </div>
   </body>
 </html>

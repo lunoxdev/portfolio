@@ -22,7 +22,7 @@ const Email = () => {
       >
         <p>lunox.code@gmail.com</p>
         <div className="hover:scale-125">
-        <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"><g fill="none" stroke="#4477ce" stroke-linecap="round" stroke-linejoin="round"><path d="M16 3H4v13"/><path d="M8 7h12v12a2 2 0 0 1-2 2h-8a2 2 0 0 1-2-2V7Z"/></g></svg>
+        <svg xmlns="http://www.w3.org/2000/svg" width="22" height="22" viewBox="0 0 24 24"><g fill="none" stroke="#4477ce" stroke-linecap="round" stroke-linejoin="round"><path d="M16 3H4v13"/><path d="M8 7h12v12a2 2 0 0 1-2 2h-8a2 2 0 0 1-2-2V7Z"/></g></svg>
         </div>
       </div>
       {copied && <p className="absolute mt-16">Copied!</p>}
