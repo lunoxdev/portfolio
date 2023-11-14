@@ -1,5 +1,4 @@
 ---
-import Layout from "../layouts/layout.astro";
 import { Image } from "astro:assets";
 import photo from "../../public/photo.webp";
 import SocialNetwork from "./SocialNetwork.astro";
@@ -9,66 +8,64 @@ import githubLogo from "../assets/social/github.svg";
 import instagramLogo from "../assets/social/ig.svg";
 ---
 
-<Layout>
-  <section
-    class="min-h-screen flex flex-col sm:flex-row justify-center items-center gap-7"
-  >
-    <figure class="w-1/2">
-      <Image
-        src={photo}
-        alt="Moises Obando"
-        width="1542"
-        height="2000"
-        loading="eager"
-        class="rounded-full"
-        quality={"high"}
-        format="webp"
+<section
+  class="min-h-screen flex flex-col sm:flex-row justify-center items-center gap-7"
+>
+  <figure class="w-1/2">
+    <Image
+      src={photo}
+      alt="Moises Obando"
+      width="1542"
+      height="2000"
+      loading="eager"
+      class="rounded-full"
+      quality={"high"}
+      format="webp"
+    />
+  </figure>
+  <div class="flex-col w-full text-center space-y-7 gap-10">
+    <div class="space-y-3">
+      <h1 class="text-2xl sm:text-4xl">
+        <span class="text-[#4477CE]">{"< "}</span>
+         I'm Moises Obando
+        <span class="text-[#4477CE]">{" />"}</span>
+      </h1>
+      <p class="text-sm sm:text-base text-gray-300">
+        Skilled <strong>Front End Developer with 2 years</strong> of
+        professional experience and a deep passion for the <strong
+          >iGaming industry</strong
+        >. I love creating immersive and amazing websites through carefully
+        crafted code and user-centric design.
+      </p>
+    </div>
+    <div class="flex justify-center">
+      <a
+        href="/cv/Moises-Obando-Front-end.pdf"
+        download
+        class="border-b-2 border-t-2 border-[#4477CE] rounded-md py-4 px-10 hover:bg-[#061A40]"
+      >
+        DOWNLOAD CV
+      </a>
+    </div>
+    <figure class="flex flex-row justify-center gap-2">
+      <SocialNetwork
+        name="LinkedIn"
+        logo={linkedinLogo}
+        url="https://www.linkedin.com/in/moises-obando/"
+      />
+      <SocialNetwork
+        name="GitHub"
+        logo={githubLogo}
+        url="https://github.com/Lunox-code"
+      />
+      <SocialNetwork
+        name="Instagram"
+        logo={instagramLogo}
+        url="https://www.instagram.com/lunox.code/"
       />
     </figure>
-    <div class="flex-col w-full text-center space-y-7 gap-10">
-      <div class="space-y-3">
-        <h1 class="text-2xl sm:text-4xl">
-          <span class="text-[#4477CE]">{"< "}</span>
-           I'm Moises Obando
-          <span class="text-[#4477CE]">{" />"}</span>
-        </h1>
-        <p class="text-sm sm:text-base text-gray-300">
-          Skilled <strong>Front End Developer with 2 years</strong> of
-          professional experience and a deep passion for the <strong
-            >iGaming industry</strong
-          >. I love creating immersive and amazing websites through carefully
-          crafted code and user-centric design.
-        </p>
-      </div>
-      <div class="flex justify-center">
-        <a
-          href="/cv/Moises-Obando-Front-end.pdf"
-          download
-          class="border-b-2 border-t-2 border-[#4477CE] rounded-md py-4 px-10 hover:bg-[#061A40]"
-        >
-          DOWNLOAD CV
-        </a>
-      </div>
-      <figure class="flex flex-row justify-center gap-2">
-        <SocialNetwork
-          name="LinkedIn"
-          logo={linkedinLogo}
-          url="https://www.linkedin.com/in/moises-obando/"
-        />
-        <SocialNetwork
-          name="GitHub"
-          logo={githubLogo}
-          url="https://github.com/Lunox-code"
-        />
-        <SocialNetwork
-          name="Instagram"
-          logo={instagramLogo}
-          url="https://www.instagram.com/lunox.code/"
-        />
-      </figure>
-      <div class="flex flex-col items-center justify-center">
-        <Email client:idle />
-      </div>
+    <div class="flex flex-col items-center justify-center">
+      <Email client:idle />
     </div>
-  </section>
-</Layout>
+  </div>
+</section>
