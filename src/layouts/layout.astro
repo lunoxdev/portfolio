@@ -1,7 +1,7 @@
 ---
 import "../styles/global.css";
-import GTMTag from "../components/GTMTag.astro";
 import Footer from "../components/Footer.astro";
+import Hotjar from "../components/Hotjar.astro";
 
 const metadata = {
   title: "Moises Obando | iGaming Front End Developer - Web Portfolio",
@@ -16,7 +16,6 @@ const metadata = {
 
 <html lang="en">
   <head>
-    <GTMTag />
     <meta charset="utf-8" />
     <link rel="icon" type="image" href="/favicon.ico" />
     <meta name="viewport" content="width=device-width" />
@@ -24,6 +23,7 @@ const metadata = {
     <meta name="description" content={metadata.description} />
     <meta name="keywords" content={metadata.keywords} />
     <link rel="canonical" href={metadata.url} />
+    <Hotjar />
     <meta property="og:title" content={metadata.title} />
     <meta property="og:description" content={metadata.description} />
     <meta property="og:image" content={metadata.img} />
