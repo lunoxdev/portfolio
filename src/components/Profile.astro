@@ -1,63 +1,74 @@
 ---
-import photo from "../../public/img/photo.webp";
-import data from "../data/data.tsx";
+import Layout from "../layouts/layout.astro";
+import { Image } from "astro:assets";
+import photo from "../../public/photo.webp";
 import SocialNetwork from "./SocialNetwork.astro";
-import Email from "./Email";
+import Email from "../components/Email";
+import linkedinLogo from "../assets/social/linkedin.svg";
+import githubLogo from "../assets/social/github.svg";
+import instagramLogo from "../assets/social/ig.svg";
 ---
 
-<section class="flex flex-col items-center justify-center">
-  <figure>
-    <img
-      src={photo.src}
-      alt="Moises"
-      width="1542"
-      height="2000"
-      class="rounded-full w-40 h-auto"
-      loading={"eager"}
-    />
-  </figure>
-  <div
-    class="flex flex-col justify-center items-center text-center space-y-6 mt-4"
+<Layout>
+  <section
+    class="min-h-screen flex flex-col sm:flex-row justify-center items-center gap-7"
   >
-    <h1 class="text-2xl sm:text-5xl">
-      <span class="text-blue-500 font-bold text-2xl sm:text-5xl">
-        {"< "}
-      </span>
-       I'm Moises Obando
-      <span class="text-blue-500 font-bold text-2xl sm:text-5xl">
-        {" />"}
-      </span>
-    </h1>
-    <p class="text-base text-[#888888] sm:text-lg">
-      Skilled <span class="text-white">Front End Developer</span> with 2 years
-      of professional experience and a deep passion for the
-      <span class="text-white">iGaming industry</span>. I love creating
-      immersive and amazing websites through carefully crafted code and
-      user-centric design.
-    </p>
-    <figure class="flex justify-center items-center gap-3">
-      {
-        data.skills.map((info) => (
-          <img
-            src={info.logo}
-            alt={info.nombre}
-            width="30"
-            height="30"
-            class="w-10 h-auto"
-            loading={"eager"}
-          />
-        ))
-      }
+    <figure class="w-1/2">
+      <Image
+        src={photo}
+        alt="Moises Obando"
+        width="1542"
+        height="2000"
+        loading="eager"
+        class="rounded-full"
+        quality={"high"}
+        format="webp"
+      />
     </figure>
-    <a
-      href="/cv/Moises-Obando-Front-end.pdf"
-      download
-      class="border-b-2 border-t-2 border-blue-600 rounded-md py-3 px-5 hover:bg-[#061A40]"
-    >
-      DOWNLOAD CV
-    </a>
-    <SocialNetwork />
-    <!-- Astro esperará hasta que el navegador esté inactivo para cargar el JavaScript1. Esto se usa cuando la interactividad del componente no es una alta prioridad -->
-    <Email client:idle />
-  </div>
-</section>
+    <div class="flex-col w-full text-center space-y-7 gap-10">
+      <div class="space-y-3">
+        <h1 class="text-2xl sm:text-4xl">
+          <span class="text-[#4477CE]">{"< "}</span>
+           I'm Moises Obando
+          <span class="text-[#4477CE]">{" />"}</span>
+        </h1>
+        <p class="text-sm sm:text-base text-gray-300">
+          Skilled <strong>Front End Developer with 2 years</strong> of
+          professional experience and a deep passion for the <strong
+            >iGaming industry</strong
+          >. I love creating immersive and amazing websites through carefully
+          crafted code and user-centric design.
+        </p>
+      </div>
+      <div class="flex justify-center">
+        <a
+          href="/cv/Moises-Obando-Front-end.pdf"
+          download
+          class="border-b-2 border-t-2 border-[#4477CE] rounded-md py-4 px-10 hover:bg-[#061A40]"
+        >
+          DOWNLOAD CV
+        </a>
+      </div>
+      <figure class="flex flex-row justify-center gap-2">
+        <SocialNetwork
+          name="LinkedIn"
+          logo={linkedinLogo}
+          url="https://www.linkedin.com/in/moises-obando/"
+        />
+        <SocialNetwork
+          name="GitHub"
+          logo={githubLogo}
+          url="https://github.com/Lunox-code"
+        />
+        <SocialNetwork
+          name="Instagram"
+          logo={instagramLogo}
+          url="https://www.instagram.com/lunox.code/"
+        />
+      </figure>
+      <div class="flex flex-col items-center justify-center">
+        <Email client:idle />
+      </div>
+    </div>
+  </section>
+</Layout>

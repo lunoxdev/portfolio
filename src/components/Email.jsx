@@ -1,7 +1,4 @@
 import { useState, useCallback } from "react";
-import copyicon from "../assets/copy-icon.svg";
-
-const email = "lunox.code@gmail.com";
 
 const Email = () => {
   const [copied, setCopied] = useState(false);
@@ -18,16 +15,18 @@ const Email = () => {
   }, []);
 
   return (
-    <div className="relative flex flex-col items-center justify-center mt-5">
+    <>
       <div
         onClick={handleCopyClick}
         className="flex items-center justify-center gap-2"
       >
-        <p>{email}</p>
-        <img src={copyicon.src} alt="Copy" width={15} height={15} />
+        <p>lunox.code@gmail.com</p>
+        <div className="hover:scale-125">
+        <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"><g fill="none" stroke="#4477ce" stroke-linecap="round" stroke-linejoin="round"><path d="M16 3H4v13"/><path d="M8 7h12v12a2 2 0 0 1-2 2h-8a2 2 0 0 1-2-2V7Z"/></g></svg>
+        </div>
       </div>
-      {copied && <p className="absolute mt-14">Copied!</p>}
-    </div>
+      {copied && <p className="absolute mt-16">Copied!</p>}
+    </>
   );
 };
 

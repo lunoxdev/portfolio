@@ -1,39 +1,45 @@
+import casinoImg from "../assets/portfolio/casino.webp";
+import afiliadosImg from "../assets/portfolio/afiliados.webp";
+import minusculasymayusculasImg from "../assets/portfolio/minusculasymayusculas.webp";
+import rickandmortyImg from "../assets/portfolio/rickandmorty.webp";
+
+import reactJsLogo from "../assets/skills/react-2.svg";
+import javascriptLogo from "../assets/skills/javascript.svg";
+import html5Logo from "../assets/skills/html5.svg";
+import css3Logo from "../assets/skills/css-3.svg";
+import figmaLogo from "../assets/skills/figma.svg";
+import tailwindCssLogo from "../assets/skills/tailwind-css.svg";
+
+
 export interface Project {
   id: number;
   name: string;
   btnname: String;
-  img: string;
+  img: ImageMetadata;
   url: string;
   description: string;
-}
-
-export interface Social {
-  id: number;
-  nombre: string;
-  logo: string;
-  url: string;
 }
 
 export interface Skill {
   id: number;
   nombre: string;
-  logo: string;
+  logo: ImageMetadata;
 }
 
 const projects: Project[] = [
   {
     id: 1,
     name: "Casino",
-    img: "../img/portfolio/casino.webp",
+    img: casinoImg,
     btnname: "Casino",
     url: "https://casino-games-app.netlify.app/",
-    description: "A sophisticated casino platform for betting.",
+    description: "A sophisticated casino platform for wagering on mock games.",
   },
   {
     id: 2,
-    name: "Afiliados",
-    btnname: "Afiliados",
-    img: "../img/portfolio/afiliados.webp",
+    name: "Affiliate landing page",
+    btnname: "Affiliate landing page",
+    img: afiliadosImg,
     url: "https://afiliados.netlify.app/",
     description:
       "An affiliate LATAM website for online sports betting platforms.",
@@ -42,79 +48,58 @@ const projects: Project[] = [
     id: 3,
     name: "Lowercase to uppercase online converter",
     btnname: "Lowercase to uppercase",
-    img: "../img/portfolio/minusculasymayusculas.webp",
-    url: "https://rick-morty-adventures.netlify.app/",
+    img: minusculasymayusculasImg,
+    url: "https://minusculasymayusculas.com/",
     description:
-      "This project consists of a simple and effective web application that allows users to convert text between uppercase and lowercase letters quickly and conveniently in just a few seconds.",
+      "Simple and effective web application that allows users to convert text between uppercase and lowercase letters quickly and conveniently in just a few seconds.",
   },
   {
     id: 4,
     name: "Rick & Morty",
     btnname: "Rick & Morty",
-    img: "../img/portfolio/rickandmorty.webp",
+    img: rickandmortyImg,
     url: "https://rick-morty-adventures.netlify.app/",
     description:
       "Embark on a captivating journey through the universe of this beloved animated series as you explore character profiles seamlessly connected to an API.",
   },
 ];
 
-const social: Social[] = [
-  {
-    id: 1,
-    nombre: "LinkedIn",
-    logo: "../img/social/linkedin.svg",
-    url: "https://www.linkedin.com/in/moises-obando/",
-  },
-  {
-    id: 2,
-    nombre: "GitHub",
-    logo: "../img/social/github.svg",
-    url: "https://github.com/Lunox-code",
-  },
-  {
-    id: 3,
-    nombre: "Instagram",
-    logo: "../img/social/ig.svg",
-    url: "https://www.instagram.com/lunox.code/",
-  },
-];
 
 const skills: Skill[] = [
   {
     id: 1,
     nombre: "React JS",
-    logo: "../img/skills/react-2.svg",
+    logo: reactJsLogo,
   },
   {
     id: 2,
     nombre: "JavaScript",
-    logo: "../img/skills/javascript.svg",
+    logo: javascriptLogo,
   },
   {
     id: 3,
     nombre: "HTML 5",
-    logo: "../img/skills/html5.svg",
+    logo: html5Logo,
   },
   {
     id: 4,
     nombre: "CSS 3",
-    logo: "../img/skills/css-3.svg",
+    logo: css3Logo,
   },
   {
     id: 5,
     nombre: "Figma",
-    logo: "../img/skills/figma.svg",
+    logo: figmaLogo,
   },
   {
     id: 6,
     nombre: "Tailwind CSS",
-    logo: "../img/skills/tailwind-css.svg",
+    logo: tailwindCssLogo,
   },
 ];
 
 const data = {
   projects,
-  social,
   skills,
 };
 

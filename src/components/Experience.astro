@@ -1,17 +1,25 @@
----
-import CardExperience from "../components/CardExperience.astro";
----
-
-<section class="grid grid-cols-2 sm:grid-cols-3 text-center gap-5 sm:gap-8">
-  <CardExperience
-    years="2+"
-    regularText="Years of magic experience in "
-    boldText="React Js"
-  />
-  <CardExperience
-    years="2+"
-    regularText="Years in the "
-    boldText="iGaming industry"
-  />
-  <CardExperience years="15+" regularText="Projects for " boldText="Betcris" />
+<section
+  class="min-h-screen flex flex-col justify-center items-center space-y-10 mb-44"
+>
+  <h2 class="text-2xl sm:text-3xl">EXPERIENCE</h2>
+  <div class="flex flex-col sm:flex-row text-center gap-10">
+    <div class="flex flex-col py-20 sm:w-1/3 rounded-lg p-5 border">
+      <p class="text-6xl text-[#4477CE] font-semibold">15+</p>
+      <p class="text-xl">
+        Projects for <strong>Betcris</strong>
+      </p>
+    </div>
+    <div class="flex flex-col py-20 sm:w-1/3 rounded-lg p-5 border">
+      <p class="text-6xl text-[#4477CE] font-semibold">2+</p>
+      <p class="text-xl">
+        Years of magic experience in <strong>React Js</strong>
+      </p>
+    </div>
+    <div class="flex flex-col py-20 sm:w-1/3 rounded-lg p-5 border">
+      <p class="text-6xl text-[#4477CE] font-semibold">2+</p>
+      <p class="text-xl">
+        Years in the <strong>iGaming industry</strong>
+      </p>
+    </div>
+  </div>
 </section>

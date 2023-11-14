@@ -1,20 +1,17 @@
 ---
-import data from "../data/data";
+import { Image } from "astro:assets";
+const { name, logo, url } = Astro.props;
 ---
 
-<figure class="flex flex-row items-center justify-center gap-5">
-  {
-    data.social.map((info) => (
-      <a href={info.url} target="_blank" rel="noreferrer nofollow">
-        <img
-          src={info.logo}
-          alt={info.nombre}
-          height="35"
-          width="35"
-          loading="eager"
-          class="hover:scale-125 w-8 h-auto"
-        />
-      </a>
-    ))
-  }
-</figure>
+<>
+  <a href={url} target="_blank" rel="noreferrer noopener nofollow">
+    <Image
+      src={logo}
+      alt={name}
+      height="50"
+      width="50"
+      loading="eager"
+      class="hover:scale-125 w-9 h-9"
+    />
+  </a>
+</>

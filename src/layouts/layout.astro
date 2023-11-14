@@ -8,6 +8,8 @@ const metadata = {
     "Explore my web portfolio, a Front End Developer specialized in iGaming. Discover highlighted projects, skills, and more.",
   keywords:
     "Front End Developer, Web Developer, React JS, iGaming, Moises Obando, Web Portfolio, Latam Markets, Betcris",
+  url: "https://moisesobando.com/",
+  img: "https://moisesobando.com/img/photo.webp",
 };
 ---
 
@@ -21,14 +23,11 @@ const metadata = {
     <title>{metadata.title}</title>
     <meta name="description" content={metadata.description} />
     <meta name="keywords" content={metadata.keywords} />
-    <link rel="canonical" href="https://moisesobando.com/" />
+    <link rel="canonical" href={metadata.url} />
     <meta property="og:title" content={metadata.title} />
     <meta property="og:description" content={metadata.description} />
-    <meta
-      property="og:image"
-      content="https://moisesobando.com../../public/img/photo.webp"
-    />
-    <meta property="og:url" content="https://moisesobando.com" />
+    <meta property="og:image" content={metadata.img} />
+    <meta property="og:url" content={metadata.url} />
     <meta property="og:type" content="website" />
   </head>
   <body>
@@ -41,6 +40,10 @@ const metadata = {
         style="display:none;visibility:hidden"></iframe></noscript
     >
     <!-- End Google Tag Manager (noscript) -->
-    <slot />
+    <div class="min-h-screen relative flex justify-center p-4 -mt-12">
+      <main class="max-w-screen-lg">
+        <slot />
+      </main>
+    </div>
   </body>
 </html>
