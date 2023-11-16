@@ -3,6 +3,8 @@ import SocialNetwork from "./SocialNetwork.astro";
 import linkedinLogo from "../assets/social/linkedin.svg";
 import githubLogo from "../assets/social/github.svg";
 import instagramLogo from "../assets/social/ig.svg";
+import logo from "../assets/mylogo/lunox-logo.svg";
+import { Image } from "astro:assets";
 ---
 
 <section class="m-h-screen flex flex-col justify-center items-center space-y-6">
@@ -43,5 +45,9 @@ import instagramLogo from "../assets/social/ig.svg";
       logo={instagramLogo}
       url="https://www.instagram.com/lunox.code/"
     />
+  </figure>
+  <figure class="flex flex-col items-center justify-center">
+    <Image src={logo} alt="My logo" width="40" height="40" loading="lazy" />
+    <figcaption class="font-thin text-xs">Lunox</figcaption>
   </figure>
 </section>
