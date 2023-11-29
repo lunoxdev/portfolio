@@ -7,31 +7,31 @@ import data from "../data/data";
   class="min-h-screen flex flex-col justify-center items-center space-y-10 mb-40"
 >
   <h2 class="text-2xl sm:text-3xl">PROJECTS</h2>
-  <div class="grid grid-cols-1 sm:grid-cols-2 gap-14">
+  <div class="grid grid-cols-1 sm:grid-cols-3 gap-5">
     {
       data.projects.map((info) => (
-        <figure>
+      <figure class="flex flex-col h-full">
           <Image
             src={info.img}
             alt={info.name}
             width="800"
             height="800"
-            class="rounded-lg w-full h-60 border"
+            class="rounded-lg w-full h-60 sm:h-40 border"
             loading="lazy"
             format="webp"
           />
           <figcaption class="font-semibold text-base text-start mt-4">
             {info.name.toUpperCase()}
           </figcaption>
-          <p class="text-sm sm:text-base text-gray-300 mt-2">
+          <p class="text-sm text-gray-300 mt-2 flex-grow">
             {info.description}
           </p>
-          <div class="flex mt-6">
+          <div class="flex mt-6 mb-14">
             <a
               href={info.url}
               target="_blank"
               rel="noreferrer noopener nofollow"
-              class="py-3 border-b-2 border-t-2 rounded-lg border-[#4477CE] w-full text-center hover:bg-[#061A40]"
+              class="py-3 text-sm border-b-2 border-t-2 rounded-lg border-[#4477CE] w-full text-center hover:bg-[#061A40]"
             >
               Explore {info.btnname}
             </a>
