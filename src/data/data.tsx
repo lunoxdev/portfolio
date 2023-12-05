@@ -4,26 +4,22 @@ import minusculasymayusculasImg from "../assets/portfolio/minusculasymayusculas.
 import rickandmortyImg from "../assets/portfolio/rickandmorty.webp";
 import mobilelegends from "../assets/portfolio/mobile-legends.webp";
 
-import reactJsLogo from "../assets/skills/react-2.svg";
-import javascriptLogo from "../assets/skills/javascript.svg";
-import html5Logo from "../assets/skills/html5.svg";
-import css3Logo from "../assets/skills/css-3.svg";
-import figmaLogo from "../assets/skills/figma.svg";
-import tailwindCssLogo from "../assets/skills/tailwind-css.svg";
+import astro from "../assets/skills/astro.svg";
+import react from "../assets/skills/react.svg";
+import tailwind from "../assets/skills/tailwind.svg";
+import typescript from "../assets/skills/typescript.svg";
+import html from "../assets/skills/html5.svg";
+// import figmaLogo from "../assets/skills/figma.svg";
+// import tailwindCssLogo from "../assets/skills/tailwind-css.svg";
 
 export interface Project {
   id: number;
   name: string;
-  btnname: String;
+  btnname: string;
   img: ImageMetadata;
   url: string;
   description: string;
-}
-
-export interface Skill {
-  id: number;
-  nombre: string;
-  logo: ImageMetadata;
+  skills: { logo: ImageMetadata; logoname: string }[];
 }
 
 const projects: Project[] = [
@@ -34,33 +30,57 @@ const projects: Project[] = [
     btnname: "Casino",
     url: "https://casino-games-app.netlify.app/",
     description: "A sophisticated casino platform for wagering on mock games.",
+    skills: [
+      { logo: react, logoname: "React JS" },
+      { logo: tailwind, logoname: "Tailwind CSS" },
+      { logo: html, logoname: "HTML 5" },
+    ],
   },
   {
     id: 2,
     name: "Affiliate landing page",
-    btnname: "Affiliate landing page",
+    btnname: "Affiliate",
     img: afiliadosImg,
     url: "https://afiliados.netlify.app/",
     description:
       "An affiliate LATAM website for online sports betting platforms.",
+    skills: [
+      { logo: react, logoname: "React JS" },
+      { logo: tailwind, logoname: "Tailwind CSS" },
+      { logo: html, logoname: "HTML 5" },
+    ],
   },
   {
     id: 3,
     name: "Mobile Legends Counter",
-    btnname: "Mobile Legends Counter",
+    btnname: "ML Counter",
     img: mobilelegends,
     url: "https://mobilelegendscounter.com/",
     description:
-      "A website where players can learn how to counter their opponents’ heroes in Mobile Legends, an online strategy game for mobile devices played in teams of five players | LATINO PAGE",
+      "A website where players can learn how to counter their opponents’ heroes in Mobile Legends.",
+    skills: [
+      { logo: react, logoname: "React JS" },
+      { logo: astro, logoname: "Astro" },
+      { logo: tailwind, logoname: "Tailwind CSS" },
+      { logo: typescript, logoname: "TypeScript" },
+      { logo: html, logoname: "HTML 5" },
+    ],
   },
   {
     id: 4,
     name: "Lowercase to uppercase online converter",
-    btnname: "Lowercase to uppercase",
+    btnname: "Converter",
     img: minusculasymayusculasImg,
     url: "https://minusculasymayusculas.com/",
     description:
-      "Simple and effective web application that allows users to convert text between uppercase and lowercase letters quickly and conveniently in just a few seconds.",
+      "Simple website that allows users to convert quickly text between uppercase and lowercase letters and more.",
+    skills: [
+      { logo: react, logoname: "React JS" },
+      { logo: astro, logoname: "Astro" },
+      { logo: tailwind, logoname: "Tailwind CSS" },
+      { logo: typescript, logoname: "TypeScript" },
+      { logo: html, logoname: "HTML 5" },
+    ],
   },
   {
     id: 5,
@@ -69,46 +89,17 @@ const projects: Project[] = [
     img: rickandmortyImg,
     url: "https://rick-morty-adventures.netlify.app/",
     description:
-      "Embark on a captivating journey through the universe of this beloved animated series as you explore character profiles seamlessly connected to an API.",
-  },
-];
-
-const skills: Skill[] = [
-  {
-    id: 1,
-    nombre: "React JS",
-    logo: reactJsLogo,
-  },
-  {
-    id: 2,
-    nombre: "JavaScript",
-    logo: javascriptLogo,
-  },
-  {
-    id: 3,
-    nombre: "HTML 5",
-    logo: html5Logo,
-  },
-  {
-    id: 4,
-    nombre: "CSS 3",
-    logo: css3Logo,
-  },
-  {
-    id: 5,
-    nombre: "Figma",
-    logo: figmaLogo,
-  },
-  {
-    id: 6,
-    nombre: "Tailwind CSS",
-    logo: tailwindCssLogo,
+      "Embark on a captivating journey through the universe of this beloved animated series as you explore character profiles connected to an API.",
+    skills: [
+      { logo: react, logoname: "React JS" },
+      { logo: tailwind, logoname: "Tailwind CSS" },
+      { logo: html, logoname: "HTML 5" },
+    ],
   },
 ];
 
 const data = {
   projects,
-  skills,
 };
 
 export default data;
