@@ -1,7 +1,6 @@
 @import "@fontsource-variable/montserrat";
 
 body {
-  height: 100vh;
   background-image: url("../assets/bg/bg.webp");
   background-size: contain;
   background-color: black;
