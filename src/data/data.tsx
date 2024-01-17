@@ -1,8 +1,7 @@
 import casinoImg from "../assets/portfolio/casino.webp";
-import afiliadosImg from "../assets/portfolio/afiliados.webp";
-import minusculasymayusculasImg from "../assets/portfolio/minusculasymayusculas.webp";
-import rickandmortyImg from "../assets/portfolio/rickandmorty.webp";
-import mobilelegends from "../assets/portfolio/mobile-legends.webp";
+import minusculasymayusculasImg from "../assets/portfolio/minusculas-y-mayusculas.webp";
+import micasadeapuesta from "../assets/portfolio/mi-casa-de-apuesta.webp";
+import mobilelegends from "../assets/portfolio/mobile-legends-counter.webp";
 
 import astro from "../assets/skills/astro.svg";
 import react from "../assets/skills/react.svg";
@@ -25,49 +24,20 @@ export interface Project {
 const projects: Project[] = [
   {
     id: 1,
-    name: "Casino",
-    img: casinoImg,
-    btnname: "Casino",
-    url: "https://casino-games-app.netlify.app/",
-    description: "A sophisticated casino platform for wagering on mock games.",
+    name: "Mi Casa de Apuesta",
+    img: micasadeapuesta,
+    btnname: "Mi Casa de Apuesta",
+    url: "https://lunoxtest.netlify.app/",
+    description: "iGaming Latam Affiliate Site",
     skills: [
+      { logo: astro, logoname: "Astro" },
       { logo: react, logoname: "React JS" },
+      { logo: typescript, logoname: "TypeScript" },
       { logo: tailwind, logoname: "Tailwind CSS" },
-      { logo: html, logoname: "HTML 5" },
     ],
   },
   {
     id: 2,
-    name: "Affiliate landing page",
-    btnname: "Affiliate",
-    img: afiliadosImg,
-    url: "https://afiliados.netlify.app/",
-    description:
-      "An affiliate LATAM website for online sports betting platforms.",
-    skills: [
-      { logo: react, logoname: "React JS" },
-      { logo: tailwind, logoname: "Tailwind CSS" },
-      { logo: html, logoname: "HTML 5" },
-    ],
-  },
-  {
-    id: 3,
-    name: "Mobile Legends Counter",
-    btnname: "ML Counter",
-    img: mobilelegends,
-    url: "https://mobilelegendscounter.com/",
-    description:
-      "A website where players can learn how to counter their opponents’ heroes in Mobile Legends.",
-    skills: [
-      { logo: react, logoname: "React JS" },
-      { logo: astro, logoname: "Astro" },
-      { logo: tailwind, logoname: "Tailwind CSS" },
-      { logo: typescript, logoname: "TypeScript" },
-      { logo: html, logoname: "HTML 5" },
-    ],
-  },
-  {
-    id: 4,
     name: "Lowercase to uppercase online converter",
     btnname: "Converter",
     img: minusculasymayusculasImg,
@@ -83,16 +53,31 @@ const projects: Project[] = [
     ],
   },
   {
-    id: 5,
-    name: "Rick & Morty",
-    btnname: "Rick & Morty",
-    img: rickandmortyImg,
-    url: "https://rick-morty-adventures.netlify.app/",
-    description:
-      "Embark on a captivating journey through the universe of this beloved animated series as you explore character profiles connected to an API.",
+    id: 3,
+    name: "Fake Casino",
+    img: casinoImg,
+    btnname: "Fake Casino",
+    url: "https://casino-games-app.netlify.app/",
+    description: "A sophisticated Fake Casino platform.",
     skills: [
       { logo: react, logoname: "React JS" },
       { logo: tailwind, logoname: "Tailwind CSS" },
+      { logo: html, logoname: "HTML 5" },
+    ],
+  },
+  {
+    id: 4,
+    name: "Mobile Legends Counter",
+    btnname: "ML Counter",
+    img: mobilelegends,
+    url: "https://mobilelegendscounter.com/",
+    description:
+      "A website where players can learn how to counter their opponents’ heroes in Mobile Legends.",
+    skills: [
+      { logo: react, logoname: "React JS" },
+      { logo: astro, logoname: "Astro" },
+      { logo: tailwind, logoname: "Tailwind CSS" },
+      { logo: typescript, logoname: "TypeScript" },
       { logo: html, logoname: "HTML 5" },
     ],
   },

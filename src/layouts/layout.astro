@@ -1,32 +1,33 @@
 ---
 import "../styles/global.css";
 import Footer from "../components/Footer.astro";
-import Hotjar from "../components/Hotjar.astro";
+import GTMHead from "../components/GTM/GTMHead.astro";
+import GTMBody from "../components/GTM/GTMBody.astro";
 
 const metadata = {
   title: "Moises Obando Portfolio | iGaming Front-End Developer | Betcris",
   description:
-    "I am Moises, a skilled Front End Developer experienced in React JS, TypeScript, JavaScript, Tailwind, HTML, etc. Passionate for the iGaming industry: Sports and Casino",
+    "I am Moises, a skilled iGaming Front End Developer with passion for Sports and Casino.",
   url: "https://moisesobando.com/",
   urlimg: "https://moisesobando.com/photo.webp",
-  ogdescription: "A skilled Front End Developer with a deep passion for the iGaming industry.",
+  ogdescription:
+    "A skilled Front End Developer with a deep passion for the iGaming industry.",
   type: "website",
   sitename: "Moises Obando Portfolio ",
   creator: "Moises Obando | Lunox",
-
 };
 ---
 
 <html lang="en">
   <head>
+    <GTMHead />
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width" />
     <title>{metadata.title}</title>
     <meta name="description" content={metadata.description} />
     <link rel="icon" type="image/svg+xml" href="/favicon.svg" />
-    <link rel="apple-touch-icon" href="/favicon.svg">
+    <link rel="apple-touch-icon" href="/favicon.svg" />
     <link rel="canonical" href={metadata.url} />
-    <Hotjar />
 
     <!-- Facebook Meta Tags -->
     <meta property="og:title" content={metadata.title} />
@@ -37,16 +38,17 @@ const metadata = {
     <meta property="og:site_name" content={metadata.sitename} />
 
     <!-- Twitter Meta Tags -->
-    <meta name="twitter:card" content="summary_large_image"/>
+    <meta name="twitter:card" content="summary_large_image" />
     <meta name="twitter:site" content={metadata.url} />
     <meta property="twitter:domain" content={metadata.url} />
     <meta property="twitter:url" content={metadata.url} />
     <meta name="twitter:title" content={metadata.title} />
     <meta name="twitter:description" content={metadata.description} />
     <meta name="twitter:image" content={metadata.urlimg} />
-    <meta name="twitter:creator" content={metadata.creator}>
+    <meta name="twitter:creator" content={metadata.creator} />
   </head>
   <body>
+    <GTMBody />
     <div class="min-h-screen relative flex justify-center items-center p-4">
       <div class="max-w-full sm:max-w-screen-md mx-auto -mt-16">
         <main>

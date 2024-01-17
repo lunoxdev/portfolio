@@ -3,7 +3,7 @@ import SocialNetwork from "./SocialNetwork.astro";
 import linkedinLogo from "../assets/social/linkedin.svg";
 import githubLogo from "../assets/social/github.svg";
 import instagramLogo from "../assets/social/ig.svg";
-import logo from "../assets/mylogo/lunox-logo.svg";
+import logo from "../assets/mylogo/lunox.svg";
 import { Image } from "astro:assets";
 ---
 
@@ -11,14 +11,12 @@ import { Image } from "astro:assets";
   <div
     class="flex flex-col justify-center items-center text-white text-center divide-y-2 space-y-5"
   >
-    <h3 class="text-xl sm:text-3xl">
-      Ready for a Digital Revolution?
-    </h3>
-    <p class="text-sm sm:text-base text-gray-300">
+    <h3 class="text-3xl sm:text-4xl">Ready for a Digital Revolution?</h3>
+    <p class="text-pretty text-gray-300">
       <br />
-       Join forces with a web wizard and bring your online vision to life. Dare
-      to dream big, and let’s get started. Contact me today and let me
-      contribute my skills to your team!
+      Join forces with a web wizard and bring your online vision to life. Dare to
+      dream big, and let’s get started. Contact me today and let me contribute my
+      skills to your team!
     </p>
   </div>
   <div class="flex justify-center items-center">
@@ -48,6 +46,6 @@ import { Image } from "astro:assets";
   </figure>
   <figure class="flex flex-col items-center justify-center">
     <Image src={logo} alt="My logo" width="40" height="40" loading="lazy" />
-    <figcaption class="font-thin text-xs">Lunox</figcaption>
+    <figcaption class="font-thin text-sm">Lunox</figcaption>
   </figure>
 </section>
