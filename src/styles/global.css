@@ -3,3 +3,7 @@
     
     @apply flex flex-col min-h-screen max-w-screen-md mx-auto bg-[#101415] text-white p-4
 }
+
+body {
+    @apply space-y-8 animate-fade-in
+}

@@ -2,7 +2,17 @@
 export default {
 	content: ['./src/**/*.{astro,html,js,jsx,md,mdx,svelte,ts,tsx,vue}'],
 	theme: {
-		extend: {},
+		extend: {
+      animation: {
+        'fade-in': 'fadeIn 1s ease-in-out',
+      },
+      keyframes: {
+        fadeIn: {
+          '0%': { opacity: 0 },
+          '100%': { opacity: 2 },
+        },
+      },
+    },
 	},
 	plugins: [],
 }
