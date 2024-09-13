@@ -1,7 +1,13 @@
 ---
+import Hero from "src/sections/Hero.astro";
 import Layout from "../layouts/home/layout.astro";
+
+const title = "Moisés Obando | iGaming Front End Developer";
+const description =
+  "Portfolio Web | Skilled iGaming Front End Developer with passion about crafting immersive websites for enhanced player experiences.";
+const canonicalUrl = "https://moisesobando.com";
 ---
 
-<Layout>
-  <h1>Lunox</h1>
+<Layout title={title} description={description} canonicalUrl={canonicalUrl}>
+  <Hero />
 </Layout>
