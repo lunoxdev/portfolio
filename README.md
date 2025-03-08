@@ -1,2 +1,2 @@
 # My portfolio
-## Made with Astro & Tailwind CSS 🚀
+## Developed with Astro & Tailwind CSS 🚀
