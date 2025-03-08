@@ -11,7 +11,7 @@ html {
 }
 
 body {
-  @apply m-0 w-full h-full text-white bg-black;
+  @apply m-0 w-full h-full text-[#bccffa] bg-black;
 
   background-image: url("../assets/background.svg");
   background-size: contain;
