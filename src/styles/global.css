@@ -11,7 +11,7 @@ html {
 }
 
 body {
-  @apply m-0 p-6 flex w-full h-screen sm:justify-center text-[#e7f8ff]/90 bg-black overscroll-none;
+  @apply m-0 p-6 flex w-full h-dvh justify-center items-start sm:items-center text-[#e7f8ff]/90 bg-black overscroll-none;
 
   background-image: url("../assets/background.svg");
   background-size: cover;
