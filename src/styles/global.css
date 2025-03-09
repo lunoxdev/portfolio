@@ -22,19 +22,19 @@ body {
 }
 
 h1 {
-  @apply text-lg font-bold;
+  @apply text-lg font-semibold;
 }
 
 h2 {
-  @apply text-base font-bold;
+  @apply text-base font-semibold;
 }
 
 h3 {
-  @apply text-base font-bold;
+  @apply text-base font-semibold;
 }
 
 h4 {
-  @apply text-sm font-bold;
+  @apply text-sm font-semibold;
 }
 
 p {
