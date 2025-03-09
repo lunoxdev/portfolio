@@ -1,6 +1,5 @@
 @import "tailwindcss";
 
-html,
 html {
   @import url("https://fonts.googleapis.com/css2?family=Roboto+Mono:ital,wght@0,100..700;1,100..700&display=swap");
 
@@ -11,15 +10,18 @@ html {
 }
 
 body {
-  @apply m-0 p-6 flex w-full h-full justify-center text-[#e7f8ff]/90 bg-black overscroll-none;
+  @apply m-0 p-0 w-full h-full text-[#e7f8ff]/90 bg-black overscroll-none;
+}
 
+.background {
   background-image: url("../assets/background.svg");
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
 
+  @apply flex w-full h-full justify-center;
 }
-
+ 
 h1 {
   @apply text-lg;
 }
@@ -59,14 +61,14 @@ li {
   opacity: 0;
   transform: translateX(40px);
   animation: easeIn 1.5s forwards;
-  animation-delay: 2.5s;
+  animation-delay: 2.0s;
 }
 
 .animate-contact {
   opacity: 0;
   transform: translateX(40px);
   animation: easeIn 1.5s forwards;
-  animation-delay: 3.5s;
+  animation-delay: 2.5s;
 }
 
 /* Definir la animación una sola vez */
