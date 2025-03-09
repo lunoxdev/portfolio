@@ -11,7 +11,7 @@ html {
 }
 
 body {
-  @apply m-0 p-6 flex w-full h-screen sm:justify-center text-[#C5F0FF] bg-black overscroll-none;
+  @apply m-0 p-6 flex w-full h-screen sm:justify-center text-[#e7f8ff]/90 bg-black overscroll-none;
 
   background-image: url("../assets/background.svg");
   background-size: cover;
@@ -30,15 +30,15 @@ h2 {
 }
 
 h3 {
-  @apply text-base font-semibold;
+  @apply text-base font-bold;
 }
 
 h4 {
-  @apply text-sm font-semibold;
+  @apply text-sm font-bold;
 }
 
 p {
-  @apply text-sm text-[#DCE7FF]/90;
+  @apply text-sm text-[#e7f8ff]/80;
 }
 
 li {
