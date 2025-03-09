@@ -11,10 +11,42 @@ html {
 }
 
 body {
-  @apply m-0 w-full h-full text-[#bccffa] bg-black;
+  @apply m-0 p-6 flex w-full h-full justify-center items-center text-[#C5F0FF] bg-black;
+
+  overscroll-behavior: none;
 
   background-image: url("../assets/background.svg");
-  background-size: contain;
+  background-size: cover;
   background-position: center;
   background-attachment: fixed;
+  background-repeat: no-repeat;
+
+}
+
+h1 {
+  @apply text-lg font-bold;
+}
+
+h2 {
+  @apply text-base font-bold;
+}
+
+h3 {
+  @apply text-base font-bold;
+}
+
+h4 {
+  @apply text-sm font-bold;
+}
+
+p {
+  @apply text-sm text-[#DCE7FF]/90;
+}
+
+ul {
+  @apply list-disc list-inside;
+}
+
+li {
+  @apply flex w-full gap-2 text-sm hover:underline;
 }
