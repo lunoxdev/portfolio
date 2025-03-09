@@ -41,10 +41,6 @@ p {
   @apply text-sm text-[#DCE7FF]/90;
 }
 
-ul {
-  @apply list-disc list-inside;
-}
-
 li {
   @apply flex w-full gap-2 text-sm hover:underline;
 }
