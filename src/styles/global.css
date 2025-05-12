@@ -10,7 +10,7 @@ html {
 }
 
 body {
-  @apply m-0 p-0 w-full h-full text-[#e7f8ff]/90 bg-black overscroll-none;
+  @apply m-0 p-0 w-full h-full text-[#e7f8ff]/80 bg-black overscroll-none;
 }
 
 .background {
@@ -35,7 +35,7 @@ h3 {
 }
 
 p {
-  @apply text-xs sm:text-sm text-[#e7f8ff]/80;
+  @apply text-xs sm:text-sm;
 }
 
 li {
