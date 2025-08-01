@@ -1,9 +1,28 @@
+---
+import LinkedIn from "@assets/icons/linkedin-icon.svg";
+---
+
 <section class="space-y-1">
-  <h1 class="text-sm">Moises Obando</h1>
-  <h2 class="font-semibold wrap-break-word text-sm">
+  <div class="flex justify-between">
+    <h1 class="text-sm sm:text-base">Moises Obando</h1>
+    <div class="text-sm sm:text-base">
+      <a
+        href="https://www.linkedin.com/in/moises-obando/"
+        target="_blank"
+        aria-label="Go to LinkedIn"
+      >
+        <img
+          src={LinkedIn.src}
+          alt="LinkedIn"
+          class="h-5 w-5 hover:scale-110 transition-transform duration-200"
+        />
+      </a>
+    </div>
+  </div>
+  <h2 class="font-semibold wrap-break-word text-sm sm:text-lg">
     Senior Frontend Developer | Learning WEB3
   </h2>
-  <p class="text-xs text-pretty">
+  <p class="text-xs sm:text-sm text-pretty">
     Transforming ideas into elegant, high-performance, and responsive web
     experiences, with a background in the iGaming industry.
     <br />

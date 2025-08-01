@@ -17,8 +17,10 @@ export default function ProjectsGrid({ projects, noResults }) {
               key={index}
               className="flex flex-col justify-between space-y-2 px-3 py-6 border border-cyan-950 hover:border-cyan-500 rounded-md"
             >
-              <h3 className="text-sm font-semibold">{project.name}</h3>
-              <p className="text-xs">{project.description}</p>
+              <h3 className="text-sm sm:text-base font-semibold">
+                {project.name}
+              </h3>
+              <p className="text-xs sm:text-sm">{project.description}</p>
 
               {/* Stack Carousel */}
               <div className="relative overflow-hidden h-5">
@@ -31,7 +33,7 @@ export default function ProjectsGrid({ projects, noResults }) {
                   {project.stacks.map((stack, i) => (
                     <span
                       key={`original-${i}`}
-                      className="mr-2 text-[10px] text-cyan-500"
+                      className="mr-2 text-[10px] sm:text-xs text-cyan-500"
                     >
                       {stack} ·
                     </span>
