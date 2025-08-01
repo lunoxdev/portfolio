@@ -178,7 +178,7 @@ export default function Projects() {
           <img
             src={LinkedIn.src}
             alt="LinkedIn"
-            className="h-7 w-7 hover:scale-110 transition-transform duration-200"
+            className="h-6 w-6 hover:scale-110 transition-transform duration-200"
           />
         </a>
       </div>
