@@ -9,7 +9,7 @@ export default function ProjectsGrid({ projects, noResults }) {
     >
       {/* No results message */}
       {noResults ? (
-        <span className="text-sm text-amber-400">
+        <span className="text-amber-400">
           Required stack? I learn fast and deliver results.
         </span>
       ) : (
@@ -23,8 +23,8 @@ export default function ProjectsGrid({ projects, noResults }) {
               className="flex flex-col justify-between space-y-2 px-3 py-6 border border-cyan-950 hover:border-cyan-500 rounded-md transition-opacity duration-300 
                          group-hover:opacity-40 hover:opacity-100"
             >
-              <h3 className="text-sm font-semibold">{project.name}</h3>
-              <p className="text-xs opacity-90">{project.description}</p>
+              <h3 className="font-semibold">{project.name}</h3>
+              <p className="text-sm opacity-90">{project.description}</p>
 
               {/* Stack Carousel */}
               <div className="relative overflow-hidden h-5">
@@ -37,7 +37,7 @@ export default function ProjectsGrid({ projects, noResults }) {
                   {project.stacks.map((stack, i) => (
                     <span
                       key={`original-${i}`}
-                      className="mr-2 text-[10px] sm:text-xs text-cyan-500"
+                      className="mr-2 text-xs sm:text-sm text-cyan-500"
                     >
                       {stack} ·
                     </span>
@@ -45,7 +45,7 @@ export default function ProjectsGrid({ projects, noResults }) {
                   {project.stacks.map((stack, i) => (
                     <span
                       key={`clone-${i}`}
-                      className="mr-2 text-[10px] text-cyan-500"
+                      className="mr-2 text-xs text-cyan-500"
                     >
                       {stack} ·
                     </span>
