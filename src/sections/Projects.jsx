@@ -69,6 +69,25 @@ const allProjects = [
       "GitHub",
     ],
   },
+  // {
+  //   name: "Mobile landing pages for Betcris",
+  //   description:
+  //     "MOBA counter-pick website to helps players pick smarter and rank up.",
+  //   url: "https://mobile-legends-counters.vercel.app/",
+  //   stacks: [
+  //     "CSS3",
+  //     "HTML5",
+  //     "Astro",
+  //     "React",
+  //     "AWS",
+  //     "Cloudflare",
+  //     "TailwindCSS",
+  //     "JavaScript",
+  //     "GitHub",
+  //     "pnpm",
+  //     "Motion",
+  //   ],
+  // },
   {
     name: "Tracker Description Generator",
     description:
@@ -87,25 +106,25 @@ const allProjects = [
       "pnpm",
     ],
   },
-  {
-    name: "Betcris Landing Pages",
-    description:
-      "Built mobile-only landing pages for the Betcris to support and enhance content flow and UX.",
-    url: "https://automatizaciones-betcris.netlify.app/",
-    stacks: [
-      "CSS3",
-      "HTML5",
-      "Astro",
-      "React",
-      "AWS",
-      "Cloudflare",
-      "TailwindCSS",
-      "JavaScript",
-      "GitHub",
-      "pnpm",
-      "Motion",
-    ],
-  },
+  // {
+  //   name: "Betcris Landing Pages",
+  //   description:
+  //     "Built mobile-only landing pages for the Betcris to support and enhance content flow and UX.",
+  //   url: "https://automatizaciones-betcris.netlify.app/",
+  //   stacks: [
+  //     "CSS3",
+  //     "HTML5",
+  //     "Astro",
+  //     "React",
+  //     "AWS",
+  //     "Cloudflare",
+  //     "TailwindCSS",
+  //     "JavaScript",
+  //     "GitHub",
+  //     "pnpm",
+  //     "Motion",
+  //   ],
+  // },
   {
     name: "Minúsculas y Mayúsculas",
     description:
