@@ -28,7 +28,7 @@ export const InputLightEffect = ({ value, onChange, onEnter }) => {
   const handleKeyDown = (e) => e.key === "Enter" && onEnter?.();
 
   return (
-    <div className="relative w-full sm:w-1/2 mb-2">
+    <div className="relative w-1/2 mb-2">
       <input
         ref={inputRef}
         value={value}

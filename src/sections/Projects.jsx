@@ -1,6 +1,7 @@
 import { useState } from "react";
 import { InputLightEffect } from "@components/inputLightEffect";
 import ProjectsGrid from "@components/ProjectsGrid";
+import LinkedIn from "@assets/linkedin-icon.svg";
 
 const allProjects = [
   {
@@ -162,10 +163,25 @@ export default function Projects() {
   return (
     <section className="my-4">
       {/* Search Bar */}
-      <InputLightEffect
-        value={stackFilter}
-        onChange={(e) => setStackFilter(e.target.value)}
-      />
+      <div className="flex justify-between items-center">
+        <InputLightEffect
+          value={stackFilter}
+          onChange={(e) => setStackFilter(e.target.value)}
+        />
+
+        {/* LinkedIn Link */}
+        <a
+          href="https://www.linkedin.com/in/moises-obando/"
+          target="_blank"
+          aria-label="Go to LinkedIn"
+        >
+          <img
+            src={LinkedIn.src}
+            alt="LinkedIn"
+            className="h-7 w-7 hover:scale-110 transition-transform duration-200"
+          />
+        </a>
+      </div>
 
       {/* Projects Grid */}
       <ProjectsGrid projects={filteredProjects} noResults={noResults} />
