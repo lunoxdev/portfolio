@@ -1,7 +1,7 @@
 ---
 import Layout from "@layouts/layout.astro";
 import Hero from "@sections/Hero.astro";
-import Projects from "@sections/Projects.jsx";
+import Projects from "@sections/Projects";
 
 const title = "Senior Frontend Developer | Moises Obando";
 const description =
@@ -11,11 +11,10 @@ const canonicalUrl = "https://moisesobando.com";
 
 <Layout title={title} description={description} canonicalUrl={canonicalUrl}>
   <div
-    class="flex justify-center items-center h-screen p-4 text-[#e7f8ff]/80 bg-black overscroll-none"
+    class="background flex justify-center items-center h-screen text-[#e7f8ff]/80 bg-black overscroll-none"
   >
-    <!-- Background -->
     <!-- Content -->
-    <div class="w-xl">
+    <div class="w-full sm:w-xl p-4 absolute">
       <!-- Hero -->
       <Hero />
 
