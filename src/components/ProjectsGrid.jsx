@@ -24,7 +24,7 @@ export default function ProjectsGrid({ projects, noResults }) {
                          group-hover:opacity-40 hover:opacity-100"
             >
               <h3 className="text-sm font-semibold">{project.name}</h3>
-              <p className="text-xs">{project.description}</p>
+              <p className="text-xs opacity-90">{project.description}</p>
 
               {/* Stack Carousel */}
               <div className="relative overflow-hidden h-5">
