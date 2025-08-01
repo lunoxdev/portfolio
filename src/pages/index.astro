@@ -1,6 +1,7 @@
 ---
 import Layout from "@layouts/layout.astro";
-import Hero from "@components/Hero.astro";
+import Hero from "@sections/Hero.astro";
+import Projects from "@sections/Projects.jsx";
 
 const title = "Senior Frontend Developer | Moises Obando";
 const description =
@@ -17,6 +18,9 @@ const canonicalUrl = "https://moisesobando.com";
     <div class="w-xl">
       <!-- Hero -->
       <Hero />
+
+      <!-- Search projects by stack -->
+      <Projects client:load />
     </div>
   </div>
 </Layout>
