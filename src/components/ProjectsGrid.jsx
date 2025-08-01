@@ -13,14 +13,15 @@ export default function ProjectsGrid({ projects, noResults }) {
       ) : (
         <>
           {projects.map((project, index) => (
-            <div
+            <a
               key={index}
+              href={project.url}
+              target="_blank"
+              aria-label="Go to LinkedIn"
               className="flex flex-col justify-between space-y-2 px-3 py-6 border border-cyan-950 hover:border-cyan-500 rounded-md"
             >
-              <h3 className="text-sm sm:text-base font-semibold">
-                {project.name}
-              </h3>
-              <p className="text-xs sm:text-sm">{project.description}</p>
+              <h3 className="text-sm font-semibold">{project.name}</h3>
+              <p className="text-xs">{project.description}</p>
 
               {/* Stack Carousel */}
               <div className="relative overflow-hidden h-5">
@@ -48,7 +49,7 @@ export default function ProjectsGrid({ projects, noResults }) {
                   ))}
                 </div>
               </div>
-            </div>
+            </a>
           ))}
         </>
       )}
