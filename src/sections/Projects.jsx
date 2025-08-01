@@ -54,6 +54,8 @@ export default function Projects() {
         )
   );
 
+  const noResults = stackFilter.trim() !== "" && filteredProjects.length === 0;
+
   return (
     <section className="my-4">
       {/* Search Bar */}
@@ -63,7 +65,7 @@ export default function Projects() {
       />
 
       {/* Projects Grid */}
-      <ProjectsGrid projects={filteredProjects} />
+      <ProjectsGrid projects={filteredProjects} noResults={noResults} />
     </section>
   );
 }
