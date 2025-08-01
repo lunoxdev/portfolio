@@ -26,8 +26,8 @@ export default function ProjectsGrid({ projects, noResults }) {
               {/* Stack Carousel */}
               <div className="relative overflow-hidden h-5">
                 {/* Gradients */}
-                <span className="absolute inset-y-0 -left-3 w-10 z-10 bg-gradient-to-r from-black from-50% to-transparent blur-sm" />
-                <span className="absolute inset-y-0 -right-3 w-10 z-10 bg-gradient-to-l from-black from-50% to-transparent blur-sm" />
+                {/* <span className="absolute inset-y-0 -left-3 w-10 z-10 bg-gradient-to-r from-black from-50% to-transparent blur-sm" /> */}
+                {/* <span className="absolute inset-y-0 -right-3 w-10 z-10 bg-gradient-to-l from-black from-50% to-transparent blur-sm" /> */}
 
                 {/* Animated Wrapper */}
                 <div className="animation-carousel">
