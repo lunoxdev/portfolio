@@ -22,6 +22,7 @@ const allProjects = [
       "Motion",
       "clsx",
       "Docker",
+      "MySQL",
       "DBeaver",
       "pnpm",
       "Figma",
