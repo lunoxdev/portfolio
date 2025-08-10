@@ -28,6 +28,7 @@ const allProjects = [
       "Figma",
       "Trello",
       "GitLab",
+      "Node",
     ],
   },
   {
@@ -70,7 +71,9 @@ const allProjects = [
       "TailwindCSS",
       "clsx",
       "GitHub",
-      "web3"
+      "web3",
+      "Docker",
+      "Node",
     ],
   },
   // {
