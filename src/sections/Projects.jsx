@@ -145,6 +145,7 @@ const allProjects = [
       "JavaScript",
       "Cloudflare",
       "Motion",
+      "Vercel",
     ],
   },
 ];
