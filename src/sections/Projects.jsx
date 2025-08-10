@@ -70,6 +70,7 @@ const allProjects = [
       "TailwindCSS",
       "clsx",
       "GitHub",
+      "web3"
     ],
   },
   // {
