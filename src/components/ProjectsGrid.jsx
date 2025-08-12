@@ -23,8 +23,8 @@ export default function ProjectsGrid({ projects, noResults }) {
               className="flex flex-col justify-between space-y-2 px-3 py-6 border border-cyan-950 hover:border-cyan-500 rounded-md transition-opacity duration-300 
                          group-hover:opacity-40 hover:opacity-100"
             >
-              <h3 className="font-semibold">{project.name}</h3>
-              <p className="text-sm opacity-90">{project.description}</p>
+              <h3 className="font-semibold text-sm">{project.name}</h3>
+              <p className="text-sm opacity-80">{project.description}</p>
 
               {/* Stack Carousel */}
               <div className="relative overflow-hidden h-5">

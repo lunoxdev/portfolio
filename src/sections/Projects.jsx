@@ -6,7 +6,7 @@ import GitHub from "@assets/github-icon.svg";
 
 const allProjects = [
   {
-    name: "PeerPlay Games",
+    name: "PEERPLAY GAMES",
     description:
       "PeerPlay Games casino startup showcased at ICE Barcelona 2025 attracting investors.",
     url: "https://twinkeys-portal.bluebirdarena.com/",
@@ -32,7 +32,7 @@ const allProjects = [
     ],
   },
   {
-    name: "Mi Casa de Apuesta",
+    name: "MI CASA DE APUESTA",
     description: "Founder - Affiliate iGaming site targeting the LATAM market.",
     url: "https://micasadeapuesta.pe/",
     stacks: [
@@ -50,7 +50,36 @@ const allProjects = [
     ],
   },
   {
-    name: "ETH Address Scanner",
+    name: "REAL-TIME CASINO",
+    description:
+      "Project for learning Web3 and AI with latest modern technologies.",
+    url: "https://pvpcasino.vercel.app/",
+    stacks: [
+      "HTML5",
+      "CSS3",
+      "clsx",
+      "Express",
+      "PostgreSQL",
+      "Socket.io",
+      "Axios",
+      "Vite",
+      "WebSockets",
+      "Node",
+      "Zustand",
+      "TailwindCSS",
+      "React",
+      "Motion",
+      "Docker",
+      "Supabase",
+      "Vercel",
+      "Figma",
+      "Notion",
+      "GitHub",
+      "pnpm",
+    ],
+  },
+  {
+    name: "ETH ADDRESS SCANNER",
     description:
       "Easily scan any Ethereum address to retrieve real-time blockchain data.",
     url: "https://eth-address-scanner.vercel.app/",
@@ -96,7 +125,7 @@ const allProjects = [
   //   ],
   // },
   {
-    name: "Tracker Description Generator",
+    name: "TRACKER DESCRIPTION GENERATOR",
     description:
       "Built for R2D Partners Affiliates. Supports tracker links for Leon, Slott & Twin.",
     url: "https://tracker-description-generator.vercel.app/",
@@ -132,7 +161,7 @@ const allProjects = [
   //   ],
   // },
   {
-    name: "Minúsculas y Mayúsculas",
+    name: "MINÚSCULAS Y MAYÚSCULAS",
     description:
       "Simple tool to convert text between uppercase and lowercase instantly.",
     url: "https://minusculas-y-mayusculas.vercel.app/",
