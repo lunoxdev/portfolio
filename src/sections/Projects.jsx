@@ -173,7 +173,6 @@ const allProjects = [
       "TailwindCSS",
       "GitHub",
       "pnpm",
-      "TypeScript",
       "JavaScript",
       "Motion",
       "Vercel",
