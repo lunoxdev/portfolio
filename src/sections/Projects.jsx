@@ -62,6 +62,7 @@ const allProjects = [
       "PostgreSQL",
       "Socket.io",
       "Axios",
+      "TypeScript",
       "Vite",
       "WebSockets",
       "Node",
@@ -124,25 +125,6 @@ const allProjects = [
       "Node",
     ],
   },
-  // {
-  //   name: "Mobile landing pages for Betcris",
-  //   description:
-  //     "MOBA counter-pick website to helps players pick smarter and rank up.",
-  //   url: "https://mobile-legends-counters.vercel.app/",
-  //   stacks: [
-  //     "CSS3",
-  //     "HTML5",
-  //     "Astro",
-  //     "React",
-  //     "AWS",
-  //     "Cloudflare",
-  //     "TailwindCSS",
-  //     "JavaScript",
-  //     "GitHub",
-  //     "pnpm",
-  //     "Motion",
-  //   ],
-  // },
   {
     name: "TRACKER DESCRIPTION GENERATOR",
     description:
