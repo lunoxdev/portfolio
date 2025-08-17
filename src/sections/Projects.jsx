@@ -110,6 +110,7 @@ const allProjects = [
       "Express",
       "Ether.js",
       "Alchemy",
+      "TypeScript",
       "Tenderly",
       "Fly.io",
       "Vite",
