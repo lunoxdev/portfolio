@@ -28,7 +28,7 @@ const allProjects = [
       "Figma",
       "Trello",
       "GitLab",
-      "Node",
+      "TypeScript",
     ],
   },
   {
@@ -189,6 +189,7 @@ const allProjects = [
       "HTML5",
       "Astro",
       "React",
+      "TypeScript",
       "CSS3",
       "TailwindCSS",
       "GitHub",
