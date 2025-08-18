@@ -50,7 +50,7 @@ const allProjects = [
     ],
   },
   {
-    name: "REAL-TIME CASINO",
+    name: "NEXT CASINO",
     description:
       "Project for learning Web3 and AI with latest modern technologies.",
     url: "https://pvpcasino.vercel.app/",
