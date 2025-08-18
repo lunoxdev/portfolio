@@ -4,7 +4,7 @@ export default function ProjectsGrid({ projects, noResults }) {
   return (
     <div
       className={`grid gap-2 mt-4 ${
-        noResults ? "grid-cols-1" : "grid-cols-2"
+        noResults ? "grid-cols-1" : "grid-cols-1 sm:grid-cols-2"
       } group`}
     >
       {/* No results message */}
@@ -20,7 +20,7 @@ export default function ProjectsGrid({ projects, noResults }) {
               href={project.url}
               target="_blank"
               aria-label="Go to LinkedIn"
-              className="flex flex-col justify-between space-y-2 px-3 py-6 border border-cyan-950 hover:border-cyan-500 rounded-md transition-opacity duration-300 
+              className="flex flex-col justify-between space-y-2 px-3 py-6 border border-cyan-900 hover:border-cyan-500 rounded-md transition-opacity duration-300 
                          group-hover:opacity-40 hover:opacity-100"
             >
               <h3 className="font-semibold text-sm">{project.name}</h3>
