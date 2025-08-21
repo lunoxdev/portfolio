@@ -41,7 +41,7 @@ export const InputLightEffect = ({ value, onChange, onEnter }) => {
         onMouseLeave={handleMouseLeave}
         autoComplete="off"
         placeholder="🔎  Search by stack"
-        className="h-10 w-full border border-cyan-950 rounded-sm bg-black/30 px-2 text-cyan-100 placeholder:text-cyan-100/70 transition-colors duration-300 focus:border-cyan-900 focus:outline-lime-900 outline-none text-xs sm:text-base"
+        className="h-10 placeholder:text-start text-center w-full border border-cyan-950 rounded-sm bg-black/30 px-2 text-cyan-100 placeholder:text-cyan-100/70 transition-colors duration-300 focus:border-cyan-900 focus:outline-lime-900 outline-none text-xs sm:text-base"
       />
       <div
         className={clsx(
