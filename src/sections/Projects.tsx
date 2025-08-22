@@ -4,7 +4,14 @@ import ProjectsGrid from "@components/ProjectsGrid";
 import LinkedIn from "@assets/linkedin-icon.svg";
 import GitHub from "@assets/github-icon.svg";
 
-const allProjects = [
+export interface Project {
+  name: string;
+  description: string;
+  url: string;
+  stacks: string[];
+}
+
+const allProjects: Project[] = [
   {
     name: "PEERPLAY GAMES",
     description:
@@ -196,7 +203,7 @@ const allProjects = [
 ];
 
 export default function Projects() {
-  const [stackFilter, setStackFilter] = useState("");
+  const [stackFilter, setStackFilter] = useState<string>("");
 
   const filteredProjects = allProjects.filter((project) =>
     stackFilter.trim() === ""

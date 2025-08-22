@@ -1,6 +1,15 @@
 import "@styles/ProjectsGrid.css";
+import { type Project } from "./../sections/Projects";
 
-export default function ProjectsGrid({ projects, noResults }) {
+interface ProjectsGridProps {
+  projects: Project[];
+  noResults: boolean;
+}
+
+export default function ProjectsGrid({
+  projects,
+  noResults,
+}: ProjectsGridProps) {
   return (
     <div
       className={`grid gap-2 mt-4 ${

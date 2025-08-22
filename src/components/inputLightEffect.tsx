@@ -1,13 +1,23 @@
-import { useRef, useState } from "react";
+import React, { useRef, useState } from "react";
 import clsx from "clsx";
 
-export const InputLightEffect = ({ value, onChange, onEnter }) => {
-  const inputRef = useRef(null);
-  const [isFocused, setIsFocused] = useState(false);
-  const [position, setPosition] = useState({ x: 0, y: 0 });
-  const [show, setShow] = useState(false);
+interface InputLightEffectProps {
+  value: string;
+  onChange: (e: React.ChangeEvent<HTMLInputElement>) => void;
+  onEnter?: () => void;
+}
 
-  const handleMouseMove = (e) => {
+export const InputLightEffect = ({
+  value,
+  onChange,
+  onEnter,
+}: InputLightEffectProps) => {
+  const inputRef = useRef<HTMLInputElement | null>(null);
+  const [isFocused, setIsFocused] = useState<boolean>(false);
+  const [position, setPosition] = useState({ x: 0, y: 0 });
+  const [show, setShow] = useState<boolean>(false);
+
+  const handleMouseMove = (e: React.MouseEvent<HTMLInputElement>) => {
     if (!inputRef.current || isFocused) return;
     const rect = inputRef.current.getBoundingClientRect();
     setPosition({ x: e.clientX - rect.left, y: e.clientY - rect.top });

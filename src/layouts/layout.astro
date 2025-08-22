@@ -2,6 +2,12 @@
 import { ViewTransitions } from "astro:transitions";
 import "@styles/global.css";
 
+interface LayoutProps {
+  title: string;
+  description: string;
+  canonicalUrl: string;
+}
+
 const meta = {
   img: "https://moisesobando.com/favicon.svg",
   url: "https://moisesobando.com/",
@@ -11,7 +17,7 @@ const meta = {
 
 const { img, url, sitename, creator } = meta;
 
-const { title, description, canonicalUrl } = Astro.props;
+const { title, description, canonicalUrl } = Astro.props as LayoutProps;
 ---
 
 <html lang="en">
