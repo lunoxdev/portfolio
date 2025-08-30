@@ -75,6 +75,7 @@ const allProjects: Project[] = [
       "TailwindCSS",
       "React",
       "Motion",
+      "Botpress",
       "Docker",
       "Supabase",
       "Vercel",
