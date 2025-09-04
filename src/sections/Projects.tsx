@@ -57,7 +57,7 @@ const allProjects: Project[] = [
   {
     name: "NEXT CASINO",
     description:
-      "Project for learning Web3 and AI with latest modern technologies.",
+      "Project for learning Blockchain, AI and PixiJS with latest modern technologies.",
     url: "https://pvpcasino.vercel.app/",
     stacks: [
       "HTML5",
@@ -102,7 +102,8 @@ const allProjects: Project[] = [
   },
   {
     name: "COLOR GUESS GAME",
-    description: "A interactive color guessing game built with PixiJS",
+    description:
+      "A PixiJS interactive color guessing game with persistent stage.",
     url: "https://color-guess-pixijs-game.vercel.app",
     stacks: [
       "HTML5",
@@ -111,6 +112,7 @@ const allProjects: Project[] = [
       "PixiJS",
       "React",
       "TypeScript",
+      "Zustand",
       "Vercel",
       "GitHub",
       "pnpm",
@@ -119,7 +121,7 @@ const allProjects: Project[] = [
   {
     name: "ETH ADDRESS SCANNER",
     description:
-      "Easily scan any Ethereum address to retrieve real-time blockchain data.",
+      "Scan any Ethereum address to retrieve real-time blockchain data.",
     url: "https://eth-address-scanner.vercel.app/",
     stacks: [
       "pnpm",
@@ -147,7 +149,7 @@ const allProjects: Project[] = [
   {
     name: "MOBILE LEGENDS COUNTERS",
     description:
-      "A web tool for players that provides strategic hero counter-picks to help you rank up faster.",
+      "Provides strategic hero counter-picks to help you rank up faster.",
     url: "https://mobile-legends-counters.vercel.app/",
     stacks: [
       "HTML5",
