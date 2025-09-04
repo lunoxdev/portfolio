@@ -55,6 +55,23 @@ const allProjects: Project[] = [
     ],
   },
   {
+    name: "CLASSIC CASINO",
+    description:
+      "Classic casino with a traditional UI, offering a simple and familiar gaming experience.",
+    url: "https://casino-classic.vercel.app/",
+    stacks: [
+      "HTML5",
+      "CSS3",
+      "TypeScript",
+      "Vite",
+      "TailwindCSS",
+      "React",
+      "Vercel",
+      "GitHub",
+      "pnpm",
+    ],
+  },
+  {
     name: "NEXT CASINO",
     description:
       "Project to explore Blockchain, AI and PixiJS with latest modern technologies.",
@@ -78,23 +95,6 @@ const allProjects: Project[] = [
       "Botpress",
       "Docker",
       "Supabase",
-      "Vercel",
-      "GitHub",
-      "pnpm",
-    ],
-  },
-  {
-    name: "CLASSIC CASINO",
-    description:
-      "Classic casino with a traditional UI, offering a simple and familiar gaming experience.",
-    url: "https://casino-classic.vercel.app/",
-    stacks: [
-      "HTML5",
-      "CSS3",
-      "TypeScript",
-      "Vite",
-      "TailwindCSS",
-      "React",
       "Vercel",
       "GitHub",
       "pnpm",
