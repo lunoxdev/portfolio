@@ -57,7 +57,7 @@ const allProjects: Project[] = [
   {
     name: "NEXT CASINO",
     description:
-      "Project for learning Blockchain, AI and PixiJS with latest modern technologies.",
+      "Project to explore Blockchain, AI and PixiJS with latest modern technologies.",
     url: "https://pvpcasino.vercel.app/",
     stacks: [
       "HTML5",
