@@ -72,6 +72,42 @@ const allProjects: Project[] = [
     ],
   },
   {
+    name: "COLOR GUESS GAME",
+    description:
+      "A PixiJS interactive color guessing game with persistent stage.",
+    url: "https://color-guess-pixijs-game.vercel.app",
+    stacks: [
+      "HTML5",
+      "TailwindCSS",
+      "Vite",
+      "PixiJS",
+      "React",
+      "TypeScript",
+      "Zustand",
+      "Vercel",
+      "GitHub",
+      "pnpm",
+    ],
+  },
+  {
+    name: "ANIME STORY AI",
+    description:
+      "AI-powered interactive anime story generator created with NanoBanana AI, Next.js, AI SDK, and TailwindCSS.",
+    url: "https://anime-story-ai.vercel.app/",
+    stacks: [
+      "React",
+      "Next.js",
+      "TailwindCSS",
+      "TypeScript",
+      "AI SDK",
+      "NanoBanana AI",
+      "AI",
+      "Vercel",
+      "GitHub",
+      "pnpm",
+    ],
+  },
+  {
     name: "NEXT CASINO",
     description:
       "Project to explore Blockchain, AI and PixiJS with latest modern technologies.",
@@ -95,24 +131,6 @@ const allProjects: Project[] = [
       "Botpress",
       "Docker",
       "Supabase",
-      "Vercel",
-      "GitHub",
-      "pnpm",
-    ],
-  },
-  {
-    name: "COLOR GUESS GAME",
-    description:
-      "A PixiJS interactive color guessing game with persistent stage.",
-    url: "https://color-guess-pixijs-game.vercel.app",
-    stacks: [
-      "HTML5",
-      "TailwindCSS",
-      "Vite",
-      "PixiJS",
-      "React",
-      "TypeScript",
-      "Zustand",
       "Vercel",
       "GitHub",
       "pnpm",
@@ -192,8 +210,8 @@ export default function Projects() {
     stackFilter.trim() === ""
       ? true
       : project.stacks.some((stack) =>
-          stack.toLowerCase().includes(stackFilter.toLowerCase())
-        )
+        stack.toLowerCase().includes(stackFilter.toLowerCase())
+      )
   );
 
   const noResults = stackFilter.trim() !== "" && filteredProjects.length === 0;
