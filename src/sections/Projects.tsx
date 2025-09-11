@@ -39,7 +39,7 @@ const allProjects: Project[] = [
     name: "CLASSIC CASINO",
     description:
       "Simple traditional casino that mirrors the look and feel of classic gaming platforms",
-    url: "https://casino-classic.vercel.app/",
+    url: "https://classic-casino.vercel.app/",
     stacks: [
       "Vercel",
       "Vite",
