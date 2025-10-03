@@ -57,6 +57,21 @@ const allProjects: Project[] = [
     ],
   },
   {
+    name: "NEON CASINO",
+    description:
+      "A modern online casino platform featuring original games, popular slots.",
+    url: "https://neon-casino.vercel.app/",
+    stacks: [
+      "Vercel",
+      "NextJS",
+      "TypeScript",
+      "TailwindCSS",
+      "React",
+      "CSS3",
+      "HTML5",
+    ],
+  },
+  {
     name: "CLASSIC CASINO",
     description:
       "Simple traditional casino that mirrors the look and feel of classic gaming platforms",
