@@ -36,6 +36,23 @@ const allProjects: Project[] = [
     ],
   },
   {
+    name: "TREBOLESBET",
+    description:
+      "My own online casino with original games, supporting crypto payments and user registration.",
+    url: "https://trebolesbet.com/",
+    stacks: [
+      "Vercel",
+      "NextJS",
+      "TypeScript",
+      "Supabase",
+      "GSAP",
+      "Axios",
+      "TailwindCSS",
+      "React",
+      "HTML5",
+    ],
+  },
+  {
     name: "M&M STORE",
     description:
       "An e-commerce project with features product management, a shopping cart, user authentication, and order confirmation via WhatsApp.",
@@ -57,37 +74,6 @@ const allProjects: Project[] = [
     ],
   },
   {
-    name: "NEON CASINO",
-    description:
-      "A modern online casino platform featuring original games, popular slots.",
-    url: "https://neon-casino.vercel.app/",
-    stacks: [
-      "Vercel",
-      "NextJS",
-      "TypeScript",
-      "TailwindCSS",
-      "React",
-      "CSS3",
-      "HTML5",
-    ],
-  },
-  {
-    name: "CLASSIC CASINO",
-    description:
-      "Simple traditional casino that mirrors the look and feel of classic gaming platforms",
-    url: "https://classic-casino.vercel.app/",
-    stacks: [
-      "Vercel",
-      "Vite",
-      "TypeScript",
-      "TailwindCSS",
-      "React",
-      "Node",
-      "CSS3",
-      "HTML5",
-    ],
-  },
-  {
     name: "MI CASA DE APUESTA",
     description: "Founder | Affiliate iGaming site targeting Peru market.",
     url: "https://micasadeapuesta.pe/",
@@ -103,6 +89,22 @@ const allProjects: Project[] = [
       "Bun",
       "MDX",
       "SEO",
+    ],
+  },
+  {
+    name: "CLASSIC CASINO",
+    description:
+      "Simple casino offering live matches and popular slot games.",
+    url: "https://classic-casino.vercel.app/",
+    stacks: [
+      "Vercel",
+      "Vite",
+      "TypeScript",
+      "TailwindCSS",
+      "React",
+      "Node",
+      "CSS3",
+      "HTML5",
     ],
   },
   {
