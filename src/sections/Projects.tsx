@@ -36,7 +36,7 @@ const allProjects: Project[] = [
     ],
   },
   {
-    name: "TREBOLESBET",
+    name: "TREBOLBETS",
     description:
       "My own online casino with original games, supporting crypto payments and user registration.",
     url: "https://trebolbets.com/",
