@@ -39,7 +39,7 @@ const allProjects: Project[] = [
     name: "TREBOLESBET",
     description:
       "My own online casino with original games, supporting crypto payments and user registration.",
-    url: "https://trebolesbet.com/",
+    url: "https://trebolbets.com/",
     stacks: [
       "Vercel",
       "NextJS",
@@ -48,6 +48,8 @@ const allProjects: Project[] = [
       "GSAP",
       "Axios",
       "TailwindCSS",
+      "Express",
+      "Socket IO",
       "React",
       "HTML5",
     ],
