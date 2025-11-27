@@ -1,8 +1,4 @@
-import { useState } from "react";
-import { InputLightEffect } from "@components/inputLightEffect";
 import ProjectsGrid from "@components/ProjectsGrid";
-import LinkedIn from "@assets/linkedin-icon.svg";
-import GitHub from "@assets/github-icon.svg";
 
 export interface Project {
   name: string;
@@ -11,7 +7,7 @@ export interface Project {
   stacks: string[];
 }
 
-const allProjects: Project[] = [
+const mainProjects: Project[] = [
   {
     name: "PEERPLAY GAMES",
     description:
@@ -55,6 +51,27 @@ const allProjects: Project[] = [
     ],
   },
   {
+    name: "MI CASA DE APUESTA",
+    description: "Affiliate iGaming site targeting Peru market.",
+    url: "https://micasadeapuesta.pe/",
+    stacks: [
+      "Astro",
+      "React",
+      "CSS3",
+      "Typescript",
+      "HTML5",
+      "TailwindCSS",
+      "Vercel",
+      "Cloudflare",
+      "Bun",
+      "MDX",
+      "SEO",
+    ],
+  },
+];
+
+const sideProjects: Project[] = [
+  {
     name: "M&M STORE",
     description:
       "An e-commerce project with features product management, a shopping cart, user authentication, and order confirmation via WhatsApp.",
@@ -73,24 +90,6 @@ const allProjects: Project[] = [
       "CSS3",
       "React",
       "HTML5",
-    ],
-  },
-  {
-    name: "MI CASA DE APUESTA",
-    description: "Founder | Affiliate iGaming site targeting Peru market.",
-    url: "https://micasadeapuesta.pe/",
-    stacks: [
-      "Astro",
-      "React",
-      "CSS3",
-      "Typescript",
-      "HTML5",
-      "TailwindCSS",
-      "Vercel",
-      "Cloudflare",
-      "Bun",
-      "MDX",
-      "SEO",
     ],
   },
   {
@@ -184,80 +183,30 @@ const allProjects: Project[] = [
       "Vercel",
     ],
   },
-  {
-    name: "Mobile Legends Counters",
-    description:
-      "ML counter-pick website to helps players pick smarter and rank up.",
-    url: "https://mobile-legends-counters.vercel.app/",
-    stacks: [
-      "CSS3",
-      "HTML5",
-      "Astro",
-      "React",
-      "AWS",
-      "Cloudflare",
-      "TailwindCSS",
-      "JavaScript",
-      "GitHub",
-      "pnpm",
-      "Motion",
-    ],
-  },
 ];
 
 export default function Projects() {
-  const [stackFilter, setStackFilter] = useState<string>("");
-
-  const filteredProjects = allProjects.filter((project) =>
-    stackFilter.trim() === ""
-      ? true
-      : project.stacks.some((stack) =>
-        stack.toLowerCase().includes(stackFilter.toLowerCase())
-      )
-  );
-
-  const noResults = stackFilter.trim() !== "" && filteredProjects.length === 0;
-
   return (
     <section className="my-4">
-      {/* Search Bar */}
-      <div className="flex justify-between items-center">
-        <InputLightEffect
-          value={stackFilter}
-          onChange={(e) => setStackFilter(e.target.value)}
-        />
+      {/* Social Links */}
 
-        <div className="flex items-center space-x-2">
-          {/* GitHub */}
-          <a
-            href="https://github.com/lunoxdev"
-            target="_blank"
-            aria-label="Go to GitHub"
-          >
-            <img
-              src={GitHub.src}
-              alt="GitHub"
-              className="h-8 w-8 hover:scale-110 transition-transform duration-200"
-            />
-          </a>
 
-          {/* LinkedIn Link */}
-          <a
-            href="https://www.linkedin.com/in/moises-obando/"
-            target="_blank"
-            aria-label="Go to LinkedIn"
-          >
-            <img
-              src={LinkedIn.src}
-              alt="LinkedIn"
-              className="h-7 w-7 hover:scale-110 transition-transform duration-200"
-            />
-          </a>
-        </div>
-      </div>
+      {/* Main Projects */}
+      <h2 className="text-3xl font-bold mb-4 mt-8">Projects</h2>
+      <ProjectsGrid projects={mainProjects} noResults={false} />
 
-      {/* Projects Grid */}
-      <ProjectsGrid projects={filteredProjects} noResults={noResults} />
+      {/* Side Projects */}
+      <h2 className="text-3xl font-bold mb-4 mt-8">Side Projects</h2>
+      <ul className="list-disc list-inside space-y-2">
+        {sideProjects.map((project) => (
+          <li key={project.name}>
+            <a href={project.url} target="_blank" rel="noopener noreferrer" className="text-blue-400 hover:underline">
+              {project.name}
+            </a>
+            : {project.description}
+          </li>
+        ))}
+      </ul>
     </section>
   );
 }
