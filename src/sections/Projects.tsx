@@ -34,7 +34,7 @@ const mainProjects: Project[] = [
   {
     name: "TREBOLBETS",
     description:
-      "My own online casino with original games, supporting crypto payments and user registration.",
+      "Online casino with my original games, supporting crypto payments and user registration.",
     url: "https://trebolbets.com/",
     stacks: [
       "Vercel",
@@ -109,6 +109,58 @@ const sideProjects: Project[] = [
     ],
   },
   {
+    name: "ZELDA SLOT",
+    description:
+      "A fantasy slot game inspired by Zelda, built with PixiJS V8. It features smooth reel animations, and nostalgic sound effects.",
+    url: "https://zelda-slot.vercel.app/",
+    stacks: [
+      "Vercel",
+      "Vite",
+      "TypeScript",
+      "TailwindCSS",
+      "GSAP",
+      "PixiJS",
+      "React",
+      "HTML5",
+    ],
+  },
+  {
+    name: "COLOR GUESS GAME",
+    description:
+      "An interactive color guessing game built with PixiJS V8, featuring a persistent stage for seamless gameplay.",
+    url: "https://color-guess-pixijs-game.vercel.app",
+    stacks: [
+      "HTML5",
+      "React",
+      "TailwindCSS",
+      "PixiJS V8",
+      "WebGL",
+      "Pixi Sound",
+      "TypeScript",
+      "Zustand",
+      "Vite",
+      "Vercel",
+    ],
+  },
+  {
+    name: "JUST VEGAS MODEL 3D",
+    description:
+      "A 3D rendering demo using Pixi.js, Pixi3D, TypeScript, and Webpack. Made as a learning resource for 3D graphics basics and implementation.",
+    url: "https://just-vegas-3d.vercel.app/",
+    stacks: [
+      "HTML5",
+      "React",
+      "TailwindCSS",
+      "PixiJS V8",
+      "WebGL",
+      "Pixi Sound",
+      "TypeScript",
+      "Zustand",
+      "Vite",
+      "Vercel",
+    ],
+  },
+  {
     name: "CRYPTO STATS",
     description:
       "Show real-time crypto data from CoinMarketCap and Coingecko with key stats, and visualize it with ApexCharts.",
@@ -150,24 +202,6 @@ const sideProjects: Project[] = [
     ],
   },
   {
-    name: "COLOR GUESS GAME",
-    description:
-      "An interactive color guessing game built with PixiJS V8, featuring a persistent stage for seamless gameplay.",
-    url: "https://color-guess-pixijs-game.vercel.app",
-    stacks: [
-      "HTML5",
-      "React",
-      "TailwindCSS",
-      "PixiJS V8",
-      "WebGL",
-      "Pixi Sound",
-      "TypeScript",
-      "Zustand",
-      "Vite",
-      "Vercel",
-    ],
-  },
-  {
     name: "ANIME STORY AI",
     description:
       "AI-powered interactive anime story generator, letting users create unique stories and characters with real-time prompts.",
@@ -195,8 +229,8 @@ export default function Projects() {
       <h2 className="text-3xl font-bold mb-4 mt-8">Projects</h2>
       <ProjectsGrid projects={mainProjects} noResults={false} />
 
-      {/* Side Projects */}
-      <h2 className="text-3xl font-bold mb-4 mt-8">Side Projects</h2>
+      {/* Other Projects */}
+      <h2 className="text-3xl font-bold mb-4 mt-8">Other Projects</h2>
       <ul className="list-disc list-inside space-y-2">
         {sideProjects.map((project) => (
           <li key={project.name}>
