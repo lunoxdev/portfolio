@@ -95,7 +95,7 @@ const sideProjects: Project[] = [
   {
     name: "CLASSIC CASINO",
     description:
-      "Simple casino offering live matches and popular slot games.",
+      "Simple casino offering live matches and popular DEMO slot games.",
     url: "https://classic-casino.vercel.app/",
     stacks: [
       "Vercel",
