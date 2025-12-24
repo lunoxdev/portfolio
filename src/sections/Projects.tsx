@@ -9,6 +9,25 @@ export interface Project {
 
 const mainProjects: Project[] = [
   {
+    name: "TREBOLBETS",
+    description:
+      "Online casino with my original games, supporting crypto payments and user registration.",
+    url: "https://trebolbets.com/",
+    stacks: [
+      "Vercel",
+      "NextJS",
+      "TypeScript",
+      "Supabase",
+      "GSAP",
+      "Axios",
+      "TailwindCSS",
+      "Express",
+      "Socket IO",
+      "React",
+      "HTML5",
+    ],
+  },
+  {
     name: "PEERPLAY GAMES",
     description:
       "Casino startup showcased at ICE Barcelona 2025 attracting investors.",
@@ -29,25 +48,6 @@ const mainProjects: Project[] = [
       "MySQL",
       "DBeaver",
       "TypeScript",
-    ],
-  },
-  {
-    name: "TREBOLBETS",
-    description:
-      "Online casino with my original games, supporting crypto payments and user registration.",
-    url: "https://trebolbets.com/",
-    stacks: [
-      "Vercel",
-      "NextJS",
-      "TypeScript",
-      "Supabase",
-      "GSAP",
-      "Axios",
-      "TailwindCSS",
-      "Express",
-      "Socket IO",
-      "React",
-      "HTML5",
     ],
   },
   {
@@ -72,22 +72,37 @@ const mainProjects: Project[] = [
 
 const sideProjects: Project[] = [
   {
-    name: "M&M STORE",
+    name: "PLINKO",
     description:
-      "An e-commerce project with features product management, a shopping cart, user authentication, and order confirmation via WhatsApp.",
-    url: "https://mai-store.vercel.app/",
+      "Game built with modern stack to drop balls into a multi-row pin pyramid, bouncing randomly until they reach the payout bins at the bottom.",
+    url: "http://plinko-game-casino.vercel.app/",
+    stacks: [
+      "React",
+      "TypeScript",
+      "Vite",
+      "Zustand",
+      "Matter.js",
+      "Canvas API",
+      "Tailwind CSS",
+      "Radix UI",
+      "Phosphor Icons",
+      "Howler.js",
+      "Chart.js",
+      "react-chartjs-2",
+    ],
+  },
+  {
+    name: "ZELDA SLOT",
+    description:
+      "A fantasy slot game inspired by Zelda. It features smooth reel animations, and nostalgic sound effects.",
+    url: "https://zelda-slot.vercel.app/",
     stacks: [
       "Vercel",
-      "NextJS",
+      "Vite",
       "TypeScript",
       "TailwindCSS",
       "GSAP",
-      "clsx",
-      "Node",
-      "Supabase",
-      "PostgreSQL",
-      "Google Auth",
-      "CSS3",
+      "PixiJS",
       "React",
       "HTML5",
     ],
@@ -109,17 +124,22 @@ const sideProjects: Project[] = [
     ],
   },
   {
-    name: "ZELDA SLOT",
+    name: "M&M STORE",
     description:
-      "A fantasy slot game inspired by Zelda, built with PixiJS V8. It features smooth reel animations, and nostalgic sound effects.",
-    url: "https://zelda-slot.vercel.app/",
+      "An e-commerce project with features product management, a shopping cart, user authentication, and order confirmation via WhatsApp.",
+    url: "https://mai-store.vercel.app/",
     stacks: [
       "Vercel",
-      "Vite",
+      "NextJS",
       "TypeScript",
       "TailwindCSS",
       "GSAP",
-      "PixiJS",
+      "clsx",
+      "Node",
+      "Supabase",
+      "PostgreSQL",
+      "Google Auth",
+      "CSS3",
       "React",
       "HTML5",
     ],
@@ -127,26 +147,8 @@ const sideProjects: Project[] = [
   {
     name: "COLOR GUESS GAME",
     description:
-      "An interactive color guessing game built with PixiJS V8, featuring a persistent stage for seamless gameplay.",
+      "An interactive color guessing game, featuring a persistent stage for seamless gameplay.",
     url: "https://color-guess-pixijs-game.vercel.app",
-    stacks: [
-      "HTML5",
-      "React",
-      "TailwindCSS",
-      "PixiJS V8",
-      "WebGL",
-      "Pixi Sound",
-      "TypeScript",
-      "Zustand",
-      "Vite",
-      "Vercel",
-    ],
-  },
-  {
-    name: "JUST VEGAS MODEL 3D",
-    description:
-      "A 3D rendering demo using Pixi.js, Pixi3D, TypeScript, and Webpack. Made as a learning resource for 3D graphics basics and implementation.",
-    url: "https://just-vegas-3d.vercel.app/",
     stacks: [
       "HTML5",
       "React",
@@ -179,9 +181,9 @@ const sideProjects: Project[] = [
     ],
   },
   {
-    name: "ETH Address Scanner",
+    name: "ETH ADDRESS SCANNER",
     description:
-      "Easily scan any Ethereum address to retrieve real-time blockchain data.",
+      "scan any Ethereum address to retrieve real-time blockchain data.",
     url: "https://eth-address-scanner.vercel.app/",
     stacks: [
       "Motion",
@@ -230,7 +232,7 @@ export default function Projects() {
       <ProjectsGrid projects={mainProjects} noResults={false} />
 
       {/* Other Projects */}
-      <h2 className="text-3xl font-bold mb-4 mt-8">Other Projects</h2>
+      <h2 className="text-3xl font-bold mb-4 mt-8">Playground</h2>
       <ul className="list-disc list-inside space-y-2">
         {sideProjects.map((project) => (
           <li key={project.name}>
