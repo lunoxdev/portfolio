@@ -2,6 +2,7 @@
 import Layout from "@layouts/layout.astro";
 import Hero from "@sections/Hero.astro";
 import Projects from "@sections/Projects";
+import GitHubPortfolioModal from "@components/GitHubPortfolioModal";
 
 const title = "Moi | Frontend Developer"; 
 const description =
@@ -10,6 +11,7 @@ const canonicalUrl = "https://moisesobando.com";
 ---
 
 <Layout title={title} description={description} canonicalUrl={canonicalUrl}>
+  <GitHubPortfolioModal client:load />
   <div
     class="background mulish-regular flex justify-center items-start min-h-screen pt-4 2xl:pt-10 text-[#e7f8ff]/80 bg-black"
   >
