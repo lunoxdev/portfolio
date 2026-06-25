@@ -1,5 +1,5 @@
 ---
-import { ViewTransitions } from "astro:transitions";
+import { ClientRouter } from "astro:transitions";
 import "@styles/global.css";
 
 interface LayoutProps {
@@ -47,7 +47,7 @@ const { title, description, canonicalUrl } = Astro.props as LayoutProps;
     <meta name="twitter:description" content={description} />
     <meta name="twitter:image" content={img} />
     <meta name="twitter:creator" content={creator} />
-    <ViewTransitions />
+    <ClientRouter />
   </head>
   <body>
     <slot />
